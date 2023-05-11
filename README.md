@@ -1,4 +1,4 @@
-# Star Wars: Starfalll Rebellion Website
+# Star Wars: Starfall Rebellion Website
 
 ## Getting Started
 
