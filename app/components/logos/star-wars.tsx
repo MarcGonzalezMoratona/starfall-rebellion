@@ -1,5 +1,6 @@
 import Image from 'next/image';
+import { ImageProps } from './horizons-white';
 
-export default function StarWars() {
-  return <Image src="/star-wars.png" alt="" width={70} height={30} />;
+export default function StarWars({ width, height }: ImageProps) {
+  return <Image src="/star-wars.png" alt="" width={width} height={height} />;
 }

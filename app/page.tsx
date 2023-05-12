@@ -9,8 +9,13 @@ export default function Home() {
         <source src="/cosmos.mp4" type="video/mp4" />
       </video> */}
       <div className="flex flex-col gap-4 items-center">
-        <h1 className="text-white text-3xl sm:text-7xl">LEGO STAR WARS:</h1>
-        <h2 className="text-white text-xl sm:text-4xl">STARFALL REBELLION</h2>
+        <h1 className="text-white text-3xl sm:text-7xl font-semibold">
+          LEGO STAR WARS:
+        </h1>
+        <h2 className="text-white text-2xl sm:text-5xl font-semibold">
+          STARFALL REBELLION
+        </h2>
+        <p className="text-white sm:text-xl">ACTION-ADVENTURE · FREE TO PLAY</p>
         <DownloadCTA />
       </div>
       <section className="flex flex-col items-center gap-4">

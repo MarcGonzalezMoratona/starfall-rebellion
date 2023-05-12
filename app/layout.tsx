@@ -2,6 +2,7 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import Header from './header';
 import Footer from './footer';
+import { MenuContextProvider } from './context/menu-context';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,9 +21,11 @@ export default function RootLayout({
       <body
         className={`${inter.className} min-h-screen flex flex-col items-center justify-between`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <MenuContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </MenuContextProvider>
       </body>
     </html>
   );

@@ -1,18 +1,25 @@
 import Image from 'next/image';
 
-type ImageProps = {
+export type ImageProps = {
   className?: string;
   priority?: boolean;
+  height?: number;
+  width?: number;
 };
 
-export const HorizonsWhite = ({ className, priority }: ImageProps) => {
+export const HorizonsWhite = ({
+  className,
+  priority,
+  height,
+  width,
+}: ImageProps) => {
   return (
     <Image
       className={className}
       src="/horizons-white.svg"
       alt="horizons games logo"
-      height={48}
-      width={48}
+      height={height}
+      width={width}
       sizes="(min-width: 320px) 320px"
       priority={priority}
     />
