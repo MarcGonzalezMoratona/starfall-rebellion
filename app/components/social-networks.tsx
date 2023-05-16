@@ -21,9 +21,10 @@ type SocialNetworksProps = {
     website?: string | undefined;
   };
   className?: string;
+  size: 'sm' | 'md' | 'lg';
 };
 
-const SocialNetworks = ({ networks, className }: SocialNetworksProps) => {
+const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
   return (
     <div
       className={`flex items-center h-full w-full gap-2 text-3xl sm:gap-4 sm:text-2xl ${className}`}
@@ -34,7 +35,12 @@ const SocialNetworks = ({ networks, className }: SocialNetworksProps) => {
           target="_blank"
           aria-label="Take a look at our twitter account"
         >
-          <FontAwesomeIcon icon={faTwitter} className="text-white w-6 h-6" />
+          <FontAwesomeIcon
+            icon={faTwitter}
+            className={`text-white  ${size === 'sm' && 'w-6 h-6'} ${
+              size === 'md' && 'w-8 h-8'
+            } ${size === 'lg' && 'w-12 h-12'}`}
+          />
         </Link>
       )}
       {networks?.instagram && (
@@ -43,7 +49,12 @@ const SocialNetworks = ({ networks, className }: SocialNetworksProps) => {
           target="_blank"
           aria-label="Take a look at our instagram account"
         >
-          <FontAwesomeIcon icon={faInstagram} className="text-white w-6 h-6" />
+          <FontAwesomeIcon
+            icon={faInstagram}
+            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
+              size === 'md' && 'w-8 h-8'
+            } ${size === 'lg' && 'w-12 h-12'}`}
+          />
         </Link>
       )}
       {networks?.youtube && (
@@ -52,7 +63,12 @@ const SocialNetworks = ({ networks, className }: SocialNetworksProps) => {
           target="_blank"
           aria-label="Take a look at our youtube channel"
         >
-          <FontAwesomeIcon icon={faYoutube} className="text-white w-6 h-6" />
+          <FontAwesomeIcon
+            icon={faYoutube}
+            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
+              size === 'md' && 'w-8 h-8'
+            } ${size === 'lg' && 'w-12 h-12'}`}
+          />
         </Link>
       )}
       {networks?.tiktok && (
@@ -61,7 +77,12 @@ const SocialNetworks = ({ networks, className }: SocialNetworksProps) => {
           target="_blank"
           aria-label="Take a look at our tiktok account"
         >
-          <FontAwesomeIcon icon={faTiktok} className="text-white w-6 h-6" />
+          <FontAwesomeIcon
+            icon={faTiktok}
+            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
+              size === 'md' && 'w-8 h-8'
+            } ${size === 'lg' && 'w-12 h-12'}`}
+          />
         </Link>
       )}
       {networks?.linkedin && (
@@ -70,7 +91,12 @@ const SocialNetworks = ({ networks, className }: SocialNetworksProps) => {
           target="_blank"
           aria-label="Take a look at our linkedin account"
         >
-          <FontAwesomeIcon icon={faLinkedin} className="text-white w-6 h-6" />
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
+              size === 'md' && 'w-8 h-8'
+            } ${size === 'lg' && 'w-12 h-12'}`}
+          />
         </Link>
       )}
       {networks?.github && (
@@ -79,7 +105,12 @@ const SocialNetworks = ({ networks, className }: SocialNetworksProps) => {
           target="_blank"
           aria-label="Take a look at our github account"
         >
-          <FontAwesomeIcon icon={faGithub} className="text-white w-6 h-6" />
+          <FontAwesomeIcon
+            icon={faGithub}
+            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
+              size === 'md' && 'w-8 h-8'
+            } ${size === 'lg' && 'w-12 h-12'}`}
+          />
         </Link>
       )}
       {networks?.website && (
@@ -88,7 +119,12 @@ const SocialNetworks = ({ networks, className }: SocialNetworksProps) => {
           target="_blank"
           aria-label="Take a look at our github account"
         >
-          <FontAwesomeIcon icon={faGlobe} className="text-white w-6 h-6" />
+          <FontAwesomeIcon
+            icon={faGlobe}
+            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
+              size === 'md' && 'w-8 h-8'
+            } ${size === 'lg' && 'w-12 h-12'}`}
+          />
         </Link>
       )}
     </div>

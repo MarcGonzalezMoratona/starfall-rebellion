@@ -7,6 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        darkPurple: '#160027',
+        royalPurple: '#7D4FA1',
+        electricIndigo: '#6610F2',
+        amber: '#FFC107',
+        fuchsia: '#FC19FC',
+      },
+      fontFamily: {
+        ethnocentric: ['Ethnocentric', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

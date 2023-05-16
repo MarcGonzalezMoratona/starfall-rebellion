@@ -16,7 +16,11 @@ export default function Footer() {
           <p>LEGO STAR WARS: Starfall Rebellion</p>
           <p>Follow us</p>
         </div>
-        <SocialNetworks networks={socialNetworks} className="sm:justify-end" />
+        <SocialNetworks
+          networks={socialNetworks}
+          className="sm:justify-end"
+          size="sm"
+        />
       </section>
       <section className="flex sm:flex-row flex-col gap-4 w-3/4 sm:gap-0 sm:items-center justify-between py-4 sm:py-8 sm:w-2/3">
         <div className="flex items-center gap-6">

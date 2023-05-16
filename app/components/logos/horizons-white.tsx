@@ -5,6 +5,7 @@ export type ImageProps = {
   priority?: boolean;
   height?: number;
   width?: number;
+  fill?: boolean;
 };
 
 export const HorizonsWhite = ({
@@ -12,6 +13,7 @@ export const HorizonsWhite = ({
   priority,
   height,
   width,
+  fill = false,
 }: ImageProps) => {
   return (
     <Image
@@ -22,6 +24,7 @@ export const HorizonsWhite = ({
       width={width}
       sizes="(min-width: 320px) 320px"
       priority={priority}
+      fill={fill}
     />
   );
 };
