@@ -49,6 +49,7 @@ export const team = {
       name: 'Santiago Carbó',
       image: 'SantiagoCarbo.jpg',
       primaryRole: 'Graphics Programmer',
+      secondaryRole: 'Animation Programmer',
       networks: {
         github: 'https://github.com/sncarbo',
         linkedin: 'https://www.linkedin.com/in/santiago-carb%C3%B3-00805510b',
@@ -139,7 +140,7 @@ export const team = {
     {
       name: 'Oriol Sors',
       image: 'OriolSors.jpg',
-      primaryRole: 'Physics Programmer',
+      primaryRole: 'Physics Lead',
       networks: {
         github: 'https://github.com/OriolSors',
         linkedin: 'https://www.linkedin.com/in/oriol-sors-vidal-4361491b9',
