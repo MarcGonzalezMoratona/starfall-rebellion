@@ -11,7 +11,7 @@ export const team = {
     {
       name: 'David García',
       image: 'DavidGarcia.jpg',
-      primaryRole: 'UI Lead',
+      primaryRole: 'UX/UI Programmer',
       networks: {
         github: 'https://github.com/DGMC117',
       },
