@@ -67,6 +67,7 @@ export const team = {
       name: 'Alexis Dieu',
       image: 'AlexisDieu.jpg',
       primaryRole: 'Graphics Programmer',
+      secondaryRole: 'Physics Programmer',
       networks: {
         github: 'https://github.com/AlexisDieu',
         linkedin: 'https://www.linkedin.com/in/alexis-dieu-705ab81a3',
@@ -156,7 +157,7 @@ export const team = {
     {
       name: 'Rodrigo Samayoa',
       image: 'RodrigoSamayoa.jpg',
-      primaryRole: 'Graphics Programmer',
+      primaryRole: 'Physics Programmer',
       networks: {
         github: 'https://github.com/totisama',
         linkedin: 'https://www.linkedin.com/in/rodrigo-samayoa-526916196',
