@@ -201,7 +201,7 @@ export const team = {
     {
       name: 'Jan Marc Costa',
       image: 'JanMarcCosta.jpg',
-      primaryRole: 'UI Programmer',
+      primaryRole: 'UX/UI Programmer',
       networks: {
         github: 'https://github.com/TheGeminis',
       },
