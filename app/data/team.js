@@ -28,7 +28,7 @@ export const team = {
     {
       name: 'Gerard Queralt',
       image: 'GerardQueralt.jpg',
-      primaryRole: 'Engine Lead Programmer',
+      primaryRole: 'Lead Engine Programmer',
       networks: {
         github: 'https://github.com/gerard-queralt',
         linkedin:
@@ -38,7 +38,7 @@ export const team = {
     {
       name: 'Miquel Prieto',
       image: 'MiquelPrieto.jpg',
-      primaryRole: 'Graphics Lead Programmer',
+      primaryRole: 'Lead Graphics Programmer',
       networks: {
         github: 'https://github.com/MacXxs',
         linkedin:
@@ -77,7 +77,7 @@ export const team = {
     {
       name: 'Andrés Machado',
       image: 'AndresMachado.jpg',
-      primaryRole: 'Level Design',
+      primaryRole: 'Level Designer',
       networks: {
         github: 'https://github.com/AndresM2',
       },
@@ -85,7 +85,7 @@ export const team = {
     {
       name: 'David Martín',
       image: 'DavidMartin.jpg',
-      primaryRole: 'Level Design Lead',
+      primaryRole: 'Lead Level Designer',
       secondaryRole: 'Physics Programmer',
       networks: {
         github: 'https://github.com/Dedado3000',
@@ -120,7 +120,7 @@ export const team = {
     {
       name: 'Oriol Murcia',
       image: 'OriolMurcia.jpg',
-      primaryRole: 'Audio Lead Programmer',
+      primaryRole: 'Lead Audio Programmer',
       secondaryRole: 'Gameplay Programmer',
       networks: {
         github: 'https://github.com/UriMurcia',
@@ -141,7 +141,7 @@ export const team = {
     {
       name: 'Oriol Sors',
       image: 'OriolSors.jpg',
-      primaryRole: 'Physics Lead Programmer',
+      primaryRole: 'Lead Physics Programmer',
       networks: {
         github: 'https://github.com/OriolSors',
         linkedin: 'https://www.linkedin.com/in/oriol-sors-vidal-4361491b9',
@@ -176,7 +176,7 @@ export const team = {
     {
       name: 'Alejandro Matus',
       image: 'AlejandroMatus.jpg',
-      primaryRole: 'UX/UI Lead',
+      primaryRole: 'Lead UX/UI',
       secondaryRole: 'Level Designer',
       networks: {
         github: 'https://github.com/Vlukkee',
@@ -185,7 +185,7 @@ export const team = {
     {
       name: 'Marc Alcón',
       image: 'MarcAlcon.jpg',
-      primaryRole: 'Gameplay Lead Programmer',
+      primaryRole: 'Lead Gameplay Programmer',
       networks: {
         github: 'https://github.com/markmeliaa',
         linkedin: 'https://www.linkedin.com/in/markmeliaa',
