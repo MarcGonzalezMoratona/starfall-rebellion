@@ -28,7 +28,7 @@ export const team = {
     {
       name: 'Gerard Queralt',
       image: 'GerardQueralt.jpg',
-      primaryRole: 'Engine Lead',
+      primaryRole: 'Engine Lead Programmer',
       networks: {
         github: 'https://github.com/gerard-queralt',
         linkedin:
@@ -38,7 +38,7 @@ export const team = {
     {
       name: 'Miquel Prieto',
       image: 'MiquelPrieto.jpg',
-      primaryRole: 'Graphics Lead',
+      primaryRole: 'Graphics Lead Programmer',
       networks: {
         github: 'https://github.com/MacXxs',
         linkedin:
@@ -140,7 +140,7 @@ export const team = {
     {
       name: 'Oriol Sors',
       image: 'OriolSors.jpg',
-      primaryRole: 'Physics Lead',
+      primaryRole: 'Physics Lead Programmer',
       networks: {
         github: 'https://github.com/OriolSors',
         linkedin: 'https://www.linkedin.com/in/oriol-sors-vidal-4361491b9',
@@ -183,7 +183,7 @@ export const team = {
     {
       name: 'Marc Alcón',
       image: 'MarcAlcon.jpg',
-      primaryRole: 'Gameplay Lead',
+      primaryRole: 'Gameplay Lead Programmer',
       networks: {
         github: 'https://github.com/markmeliaa',
         linkedin: 'https://www.linkedin.com/in/markmeliaa',
