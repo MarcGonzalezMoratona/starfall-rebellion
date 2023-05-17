@@ -1,7 +1,16 @@
+'use client';
 import Link from 'next/link';
 import { HorizonsWhite } from '../components/logos/horizons-white';
+import { useEffect } from 'react';
+import { usePageHandler } from '../hooks/usePage';
 
 export default function About() {
+  const PageHandler = usePageHandler();
+
+  useEffect(() => {
+    PageHandler('about');
+  });
+
   return (
     <main className="bg-zinc-900 w-full flex flex-col items-center justify-center">
       <section className="h-screen w-full sm:flex-row flex-col flex sm:gap-8 xl:gap-12 items-center justify-center font-ethnocentric">

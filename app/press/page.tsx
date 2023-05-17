@@ -1,20 +1,38 @@
 'use client';
 import Link from 'next/link';
 import { team } from '../data/team';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { usePageHandler } from '../hooks/usePage';
 
 export default function Press() {
   const [selected, setSelected] = useState('');
+  const PageHandler = usePageHandler();
+
+  useEffect(() => {
+    PageHandler('press');
+  });
 
   return (
     <main className="bg-zinc-900 w-full flex flex-col gap-4 items-center justify-center scroll-smooth">
+      <section className="relative">
+        <Image src="/presskit-header.jpg" alt="" width={1920} height={600} />
+        <Image
+          src="/temtem.png"
+          alt=""
+          width={280}
+          height={118}
+          className="absolute inset-0 m-auto"
+        />
+      </section>
       <div className="flex w-5/6 sm:w-2/3 py-12">
-        <nav className="shrink-0 sticky py-4 mr-16 top-0 self-start md:block hidden">
+        <nav className="shrink-0 sticky py-4 mr-16 top-0 self-start lg:block hidden">
           <ul>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'factsheet' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={`text-lg hover:text-amber ${
+                selected === 'factsheet'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('factsheet')}
             >
@@ -23,9 +41,10 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'description' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={`text-lg hover:text-amber ${
+                selected === 'description'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('description')}
             >
@@ -34,9 +53,10 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'history' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={`text-lg hover:text-amber ${
+                selected === 'history'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('history')}
             >
@@ -45,9 +65,10 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'features' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={` text-lg hover:text-amber ${
+                selected === 'features'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('features')}
             >
@@ -56,9 +77,10 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'videos' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={`text-lg hover:text-amber ${
+                selected === 'videos'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('videos')}
             >
@@ -67,9 +89,10 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'images' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={`text-lg hover:text-amber ${
+                selected === 'images'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('images')}
             >
@@ -78,9 +101,10 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'logos-icons' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={`text-lg hover:text-amber ${
+                selected === 'logos-icons'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('logos-icons')}
             >
@@ -89,9 +113,10 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'about' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={`text-lg hover:text-amber ${
+                selected === 'about'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('about')}
             >
@@ -100,9 +125,10 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'credits' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={`text-lg hover:text-amber ${
+                selected === 'credits'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('credits')}
             >
@@ -111,9 +137,10 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={`text-white text-lg hover:text-amber ${
-                selected === 'contact' &&
-                'bg-amber text-black font-semibold hover:text-black'
+              className={`text-lg hover:text-amber ${
+                selected === 'contact'
+                  ? 'bg-amber text-black font-semibold hover:text-black'
+                  : 'text-white'
               }`}
               onClick={() => setSelected('contact')}
             >
@@ -129,13 +156,10 @@ export default function Press() {
               <h1 className="font-extrabold text-3xl sm:text-5xl my-4">
                 STARFALL REBELLION PRESSKIT
               </h1>
+              <h2 className="text-xl font-semibold sm:text-2xl" id="factsheet">
+                FACTSHEET:
+              </h2>
               <ul className="flex flex-col gap-2">
-                <h2
-                  className="text-xl font-semibold sm:text-2xl"
-                  id="factsheet"
-                >
-                  FACTSHEET:
-                </h2>
                 <li className="border-b border-white py-2">
                   <p className="font-semibold">Developer:</p>
                   <p>Horizons Games</p>
@@ -147,10 +171,10 @@ export default function Press() {
                 <li className="border-b border-white py-2">
                   <p className="font-semibold">Website:</p>
                   <Link
-                    href="https://horizons-games.vercel.app"
-                    className="underline text-amber font-semibold"
+                    href="https://starfall-rebellion.vercel.app"
+                    className="underline text-amber font-semibold hover:text-white"
                   >
-                    horizons-games.vercel.app
+                    starfall-rebellion.vercel.app
                   </Link>
                 </li>
                 <li className="border-b border-white py-2">
@@ -172,7 +196,7 @@ export default function Press() {
             <article className="text-white mx-auto ">
               <div className="flex flex-col gap-2">
                 <h2
-                  className="text-xl font-semibold sm:text-2xl scroll-mt-12"
+                  className="text-xl font-semibold sm:text-2xl scroll-mt-12 mt-4"
                   id="description"
                 >
                   DESCRIPTION:
@@ -206,7 +230,7 @@ export default function Press() {
             <article className="text-white mx-auto ">
               <div className="flex flex-col gap-2">
                 <h2
-                  className="text-xl font-semibold sm:text-2xl scroll-mt-12"
+                  className="text-xl font-semibold sm:text-2xl scroll-mt-12 mt-4"
                   id="history"
                 >
                   HISTORY:
@@ -235,7 +259,7 @@ export default function Press() {
             <article className="text-white mx-auto ">
               <div className="flex flex-col gap-2">
                 <h2
-                  className="text-xl font-semibold sm:text-2xl scroll-mt-12"
+                  className="text-xl font-semibold sm:text-2xl scroll-mt-12 mt-4"
                   id="features"
                 >
                   FEATURES:
@@ -285,11 +309,21 @@ export default function Press() {
             <article className="text-white mx-auto ">
               <div className="flex flex-col gap-2">
                 <h2
-                  className="text-xl font-semibold sm:text-2xl scroll-mt-12"
+                  className="text-xl font-semibold sm:text-2xl scroll-mt-12 mt-4"
                   id="videos"
                 >
                   VIDEOS:
                 </h2>
+                {/* <iframe
+                  className="absolute top-0 left-0 h-full w-full"
+                  src={'https://www.youtube.com/embed/8dXB4pETtzI'}
+                  allowFullScreen
+                />
+                <iframe
+                  className="absolute top-0 left-0 h-full w-full"
+                  src={'https://www.youtube.com/embed/pNHbeZiWuIc'}
+                  allowFullScreen
+                /> */}
               </div>
             </article>
           </section>
@@ -297,11 +331,18 @@ export default function Press() {
             <article className="text-white mx-auto ">
               <div className="flex flex-col gap-2">
                 <h2
-                  className="text-xl font-semibold sm:text-2xl scroll-mt-12"
+                  className="text-xl font-semibold sm:text-2xl scroll-mt-12 mt-4"
                   id="images"
                 >
                   IMAGES:
                 </h2>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-8">
+                  <Image src="/bix.png" alt="" width={280} height={118} />
+                  <Image src="/hangar.png" alt="" width={280} height={118} />
+                  <Image src="/drones.png" alt="" width={280} height={118} />
+                  <Image src="/skybox.png" alt="" width={280} height={118} />
+                  <Image src="/turret.png" alt="" width={280} height={118} />
+                </div>
               </div>
             </article>
           </section>
@@ -309,11 +350,12 @@ export default function Press() {
             <article className="text-white mx-auto ">
               <div className="flex flex-col gap-2">
                 <h2
-                  className="text-xl font-semibold sm:text-2xl scroll-mt-12"
+                  className="text-xl font-semibold sm:text-2xl scroll-mt-12 mt-4"
                   id="logos-icons"
                 >
                   LOGOS & ICONS:
                 </h2>
+                <Image src="/temtem.png" alt="" width={280} height={118} />
               </div>
             </article>
           </section>
@@ -321,7 +363,7 @@ export default function Press() {
             <article className="text-white mx-auto ">
               <div className="flex flex-col gap-2">
                 <h2
-                  className="text-xl font-semibold sm:text-2xl scroll-mt-12"
+                  className="text-xl font-semibold sm:text-2xl scroll-mt-12 mt-4"
                   id="about"
                 >
                   ABOUT HORIZONS GAMES:
@@ -337,7 +379,7 @@ export default function Press() {
             <article className="text-white mx-auto ">
               <div className="flex flex-col gap-2">
                 <h2
-                  className="text-xl font-semibold sm:text-2xl scroll-mt-12"
+                  className="text-xl font-semibold sm:text-2xl scroll-mt-12 mt-4"
                   id="credits"
                 >
                   CREDITS:
@@ -362,7 +404,7 @@ export default function Press() {
             <article className="text-white mx-auto ">
               <div className="flex flex-col gap-2">
                 <h2
-                  className="text-xl font-semibold sm:text-2xl scroll-mt-12"
+                  className="text-xl font-semibold sm:text-2xl scroll-mt-12 mt-4"
                   id="contact"
                 >
                   CONTACT:
@@ -371,7 +413,7 @@ export default function Press() {
                   <li className="py-2">
                     <p className="font-semibold">Enquiries</p>
                     <Link
-                      className="underline text-amber font-semibold"
+                      className="underline text-amber font-semibold hover:text-white"
                       href="mailto:horizongamesbarcelona@gmail.com"
                     >
                       horizongamesbarcelona@gmail.com
@@ -381,7 +423,7 @@ export default function Press() {
                     <p className="font-semibold">Twitter</p>
                     <Link
                       href="https://twitter.com/horizons_games"
-                      className="underline text-amber font-semibold"
+                      className="underline text-amber font-semibold hover:text-white"
                     >
                       twitter.com/horizons_games
                     </Link>
@@ -390,7 +432,7 @@ export default function Press() {
                     <p className="font-semibold">Instagram</p>
                     <Link
                       href="https://instagram.com/horizons.games"
-                      className="underline text-amber font-semibold"
+                      className="underline text-amber font-semibold hover:text-white"
                     >
                       instagram.com/horizons.games
                     </Link>
@@ -399,7 +441,7 @@ export default function Press() {
                 <p className="font-semibold">YouTube</p>
                 <Link
                   href="https://youtube.com/@horizonsgames"
-                  className="underline text-amber font-semibold"
+                  className="underline text-amber font-semibold hover:text-white"
                 >
                   youtube.com/@horizonsgames
                 </Link>
@@ -408,7 +450,7 @@ export default function Press() {
                 <p className="font-semibold">Tik Tok</p>
                 <Link
                   href="https://tiktok.com/@horizonsgames"
-                  className="underline text-amber font-semibold"
+                  className="underline text-amber font-semibold hover:text-white"
                 >
                   tiktok.com/@horizonsgames
                 </Link>
@@ -417,7 +459,7 @@ export default function Press() {
                     <p className="font-semibold">Website</p>
                     <Link
                       href="https://horizons-games.vercel.app"
-                      className="underline text-amber font-semibold"
+                      className="underline text-amber font-semibold hover:text-white"
                     >
                       horizons-games.vercel.app
                     </Link>

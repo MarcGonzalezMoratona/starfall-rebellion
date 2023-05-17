@@ -1,8 +1,17 @@
+'use client';
+import { useEffect } from 'react';
 import DownloadCTA from './components/download-cta';
 import SocialNetworks from './components/social-networks';
 import socialNetworks from './data/social-networks';
+import { usePageHandler } from './hooks/usePage';
 
 export default function Home() {
+  const PageHandler = usePageHandler();
+
+  useEffect(() => {
+    PageHandler('home');
+  });
+
   return (
     <main className="bg-zinc-900 w-full flex flex-col items-center justify-center">
       {/* <video playsInline autoPlay muted loop>
