@@ -37,9 +37,9 @@ const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
         >
           <FontAwesomeIcon
             icon={faTwitter}
-            className={`text-white  ${size === 'sm' && 'w-6 h-6'} ${
-              size === 'md' && 'w-8 h-8'
-            } ${size === 'lg' && 'w-12 h-12'}`}
+            className={`text-white hover:text-amber ${
+              size === 'sm' && 'w-6 h-6'
+            } ${size === 'md' && 'w-8 h-8'} ${size === 'lg' && 'w-12 h-12'}`}
           />
         </Link>
       )}
@@ -51,9 +51,9 @@ const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
         >
           <FontAwesomeIcon
             icon={faInstagram}
-            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
-              size === 'md' && 'w-8 h-8'
-            } ${size === 'lg' && 'w-12 h-12'}`}
+            className={`text-white hover:text-amber ${
+              size === 'sm' && 'w-6 h-6'
+            } ${size === 'md' && 'w-8 h-8'} ${size === 'lg' && 'w-12 h-12'}`}
           />
         </Link>
       )}
@@ -65,9 +65,9 @@ const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
         >
           <FontAwesomeIcon
             icon={faYoutube}
-            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
-              size === 'md' && 'w-8 h-8'
-            } ${size === 'lg' && 'w-12 h-12'}`}
+            className={`text-white hover:text-amber ${
+              size === 'sm' && 'w-6 h-6'
+            } ${size === 'md' && 'w-8 h-8'} ${size === 'lg' && 'w-12 h-12'}`}
           />
         </Link>
       )}
@@ -79,9 +79,9 @@ const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
         >
           <FontAwesomeIcon
             icon={faTiktok}
-            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
-              size === 'md' && 'w-8 h-8'
-            } ${size === 'lg' && 'w-12 h-12'}`}
+            className={`text-white hover:text-amber ${
+              size === 'sm' && 'w-6 h-6'
+            } ${size === 'md' && 'w-8 h-8'} ${size === 'lg' && 'w-12 h-12'}`}
           />
         </Link>
       )}
@@ -93,9 +93,9 @@ const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
-              size === 'md' && 'w-8 h-8'
-            } ${size === 'lg' && 'w-12 h-12'}`}
+            className={`text-white hover:text-amber ${
+              size === 'sm' && 'w-6 h-6'
+            } ${size === 'md' && 'w-8 h-8'} ${size === 'lg' && 'w-12 h-12'}`}
           />
         </Link>
       )}
@@ -107,9 +107,9 @@ const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
-              size === 'md' && 'w-8 h-8'
-            } ${size === 'lg' && 'w-12 h-12'}`}
+            className={`text-white hover:text-amber ${
+              size === 'sm' && 'w-6 h-6'
+            } ${size === 'md' && 'w-8 h-8'} ${size === 'lg' && 'w-12 h-12'}`}
           />
         </Link>
       )}
@@ -121,9 +121,9 @@ const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
         >
           <FontAwesomeIcon
             icon={faGlobe}
-            className={`text-white ${size === 'sm' && 'w-6 h-6'} ${
-              size === 'md' && 'w-8 h-8'
-            } ${size === 'lg' && 'w-12 h-12'}`}
+            className={`text-white hover:text-amber ${
+              size === 'sm' && 'w-6 h-6'
+            } ${size === 'md' && 'w-8 h-8'} ${size === 'lg' && 'w-12 h-12'}`}
           />
         </Link>
       )}

@@ -20,7 +20,7 @@ export const team = {
       name: 'Diego Mejía',
       image: 'DiegoMejia.jpg',
       primaryRole: 'Producer',
-      secondaryRole: 'Technical Artist',
+      secondaryRole: '3D Artist',
       networks: {
         github: 'https://github.com/diegusmejia117',
       },
@@ -77,7 +77,7 @@ export const team = {
     {
       name: 'Andrés Machado',
       image: 'AndresMachado.jpg',
-      primaryRole: 'Gameplay Programmer',
+      primaryRole: 'Level Design',
       networks: {
         github: 'https://github.com/AndresM2',
       },
@@ -85,8 +85,8 @@ export const team = {
     {
       name: 'David Martín',
       image: 'DavidMartin.jpg',
-      primaryRole: 'Physics Programmer',
-      secondaryRole: 'Engine Programmer',
+      primaryRole: 'Level Design Lead',
+      secondaryRole: 'Physics Programmer',
       networks: {
         github: 'https://github.com/Dedado3000',
       },
@@ -101,14 +101,14 @@ export const team = {
         linkedin: 'https://www.linkedin.com/in/sara-izquierdo-elfau-285109222',
       },
     },
-    // {
-    //   name: 'Arnau Pérez',
-    //   image: 'ArnauPerez.jpg',
-    //   primaryRole: 'Gameplay Programmer',
-    //   networks: {
-    //     github: 'https://github.com/Mondagh',
-    //   },
-    // },
+    {
+      name: 'Arnau Pérez',
+      image: 'ArnauPerez.jpg',
+      primaryRole: 'Engine Programmer',
+      networks: {
+        github: 'https://github.com/Mondagh',
+      },
+    },
     {
       name: 'Xavier Llubés',
       image: 'XavierLlubes.jpg',
@@ -120,7 +120,8 @@ export const team = {
     {
       name: 'Oriol Murcia',
       image: 'OriolMurcia.jpg',
-      primaryRole: 'Audio Programmer',
+      primaryRole: 'Audio Lead Programmer',
+      secondaryRole: 'Gameplay Programmer',
       networks: {
         github: 'https://github.com/UriMurcia',
         linkedin: 'https://www.linkedin.com/in/oriol-murcia-catalan',
@@ -175,7 +176,8 @@ export const team = {
     {
       name: 'Alejandro Matus',
       image: 'AlejandroMatus.jpg',
-      primaryRole: '3D Artist',
+      primaryRole: 'UX/UI Lead',
+      secondaryRole: 'Level Designer',
       networks: {
         github: 'https://github.com/Vlukkee',
       },
