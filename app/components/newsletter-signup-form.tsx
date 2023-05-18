@@ -1,22 +1,24 @@
 import { useRef } from 'react';
 
 export default function NewsLetterSignUpForm() {
-  const inputRef = useRef<HTMLFormElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const subscribeUser = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const res = await fetch('/api/subscribeUser', {
-      body: JSON.stringify({
-        email: inputRef.current.value || '',
-      }),
+    if (inputRef.current != null) {
+      const res = await fetch('/api/subscribeUser', {
+        body: JSON.stringify({
+          email: inputRef.current.value || '',
+        }),
 
-      headers: {
-        'Content-Type': 'application/json',
-      },
+        headers: {
+          'Content-Type': 'application/json',
+        },
 
-      method: 'POST',
-    });
+        method: 'POST',
+      });
+    }
   };
 
   return (
