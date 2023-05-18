@@ -4,10 +4,28 @@ import { team } from '../data/team';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { usePageHandler } from '../hooks/usePage';
+import { useDevice } from '../hooks/useDevice';
+import FullScreenSlider from '../components/fullscreen-slider';
+import { conceptArt } from '../data/concept-art';
 
 export default function Press() {
   const [selected, setSelected] = useState('');
   const PageHandler = usePageHandler();
+  const device = useDevice();
+  const isMobile = device === 'mobile';
+  const isTablet = device === 'tablet';
+
+  const [isSliderOpen, setIsSliderOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openSlider = (index: any) => {
+    setCurrentImageIndex(index);
+    setIsSliderOpen(true);
+  };
+
+  const closeSlider = () => {
+    setIsSliderOpen(false);
+  };
 
   useEffect(() => {
     PageHandler('press');
@@ -20,8 +38,8 @@ export default function Press() {
         <Image
           src="/temtem.png"
           alt=""
-          width={280}
-          height={118}
+          width={isMobile ? 140 : isTablet ? 280 : 560}
+          height={isMobile ? 59 : isTablet ? 118 : 236}
           className="absolute inset-0 m-auto"
         />
       </section>
@@ -336,12 +354,29 @@ export default function Press() {
                 >
                   IMAGES:
                 </h2>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-8">
-                  <Image src="/bix.png" alt="" width={280} height={118} />
-                  <Image src="/hangar.png" alt="" width={280} height={118} />
-                  <Image src="/drones.png" alt="" width={280} height={118} />
-                  <Image src="/skybox.png" alt="" width={280} height={118} />
-                  <Image src="/turret.png" alt="" width={280} height={118} />
+                <div className="my-8 mx-8 flex flex-col items-center justify-center gap-4 sm:grid sm:grid-cols-2 md:w-2/3 xl:grid-cols-3">
+                  {conceptArt.map((image, index) => (
+                    <span key={image.url.split('.')[0]}>
+                      <div className="my-4">
+                        <Image
+                          onClick={() => openSlider(index)}
+                          className="cursor-pointer"
+                          src={image.url}
+                          width={1920}
+                          height={1080}
+                          alt={image.description}
+                        />
+                      </div>
+                      <p className="text-center">{image.description}</p>
+                    </span>
+                  ))}
+                  <FullScreenSlider
+                    images={conceptArt}
+                    isSliderOpen={isSliderOpen}
+                    closeSlider={closeSlider}
+                    currentImageIndex={currentImageIndex}
+                    setCurrentImageIndex={setCurrentImageIndex}
+                  />
                 </div>
               </div>
             </article>

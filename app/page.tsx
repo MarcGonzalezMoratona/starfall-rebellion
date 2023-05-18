@@ -4,6 +4,7 @@ import DownloadCTA from './components/download-cta';
 import SocialNetworks from './components/social-networks';
 import socialNetworks from './data/social-networks';
 import { usePageHandler } from './hooks/usePage';
+import NewsLetterSignUpForm from './components/newsletter-signup-form';
 
 export default function Home() {
   const PageHandler = usePageHandler();
@@ -35,6 +36,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <NewsLetterSignUpForm />
     </main>
   );
 }
