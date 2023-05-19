@@ -1,6 +1,6 @@
 'use client';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import DownloadCTA from './components/download-cta';
+import CTA from './components/cta';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import StarWars from './components/logos/star-wars';
@@ -48,7 +48,11 @@ export default function Header() {
             selected={pageType === 'contact'}
           />
         </ul>
-        <DownloadCTA />
+        <CTA
+          className="hidden sm:block"
+          label="DOWNLOAD"
+          href="https://github.com/Horizons-Games/Axolotl-Engine/releases"
+        />
       </header>
       <Menu />
     </>

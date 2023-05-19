@@ -22,7 +22,7 @@ export default function NewsLetterSignUpForm() {
   };
 
   return (
-    <form onSubmit={subscribeUser} className="flex flex-col gap-4 my-4">
+    <form onSubmit={subscribeUser} className="flex flex-col gap-4 my-4 w-full">
       <label
         htmlFor="email-input"
         className="text-white text-lg flex flex-col gap-2"
@@ -30,7 +30,6 @@ export default function NewsLetterSignUpForm() {
         <h2 className="text-2xl text-white font-bold">STAY CONNECTED!</h2>
         <p>Sign up to the Starfall Rebellion newsletter.</p>
       </label>
-
       <input
         className="rounded-md px-4 py-2"
         type="email"
@@ -42,7 +41,6 @@ export default function NewsLetterSignUpForm() {
         autoCapitalize="off"
         autoCorrect="off"
       />
-
       <button
         className="bg-amber py-2 text-black text-lg font-semibold rounded-md"
         type="submit"

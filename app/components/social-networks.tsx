@@ -27,7 +27,7 @@ type SocialNetworksProps = {
 const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
   return (
     <div
-      className={`flex items-center h-full w-full gap-2 text-3xl sm:gap-4 sm:text-2xl ${className}`}
+      className={`flex items-center h-full gap-2 text-3xl sm:gap-4 lg:gap-8 sm:text-2xl ${className}`}
     >
       {networks?.twitter && (
         <Link
