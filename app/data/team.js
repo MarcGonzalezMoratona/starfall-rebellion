@@ -212,7 +212,7 @@ export const team = {
       name: 'Eric Dacal',
       image: 'EricDacal.jpg',
       primaryRole: 'Art Director',
-      secondaryRole: 'Animator',
+      secondaryRole: 'Engine Programmer',
       networks: {
         github: 'https://github.com/ericdacal',
         linkedin: 'https://www.linkedin.com/in/erdasa',
