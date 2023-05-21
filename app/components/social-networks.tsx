@@ -21,10 +21,14 @@ type SocialNetworksProps = {
     website?: string | undefined;
   };
   className?: string;
-  size: 'sm' | 'md' | 'lg';
+  size?: 'sm' | 'md' | 'lg';
 };
 
-const SocialNetworks = ({ networks, className, size }: SocialNetworksProps) => {
+const SocialNetworks = ({
+  networks,
+  className,
+  size = 'md',
+}: SocialNetworksProps) => {
   return (
     <div
       className={`flex items-center h-full gap-2 text-3xl sm:gap-4 lg:gap-8 sm:text-2xl ${className}`}
