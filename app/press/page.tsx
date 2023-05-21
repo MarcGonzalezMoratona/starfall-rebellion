@@ -221,24 +221,18 @@ export default function Press() {
                 </h2>
                 <div className="flex flex-col gap-4">
                   <p>
-                    Placeholder description with a lot of text and many
-                    paragraphs
+                    Starfall Rebellion is a two-player hack and slash game
+                    insipired by Lego Star Wars.
                   </p>
                   <p>
-                    Placeholder description with a lot of text and many
-                    paragraphs Placeholder description with a lot of text and
-                    many paragraphs Placeholder description with a lot of text
-                    and many paragraphs Placeholder description with a lot of
-                    text and many paragraphs Placeholder description with a lot
-                    of text and many paragraphs
+                    {
+                      "In it, you'll take control of Bix, a renegade rebel, and Allura, an ex-convict, and you'll travel across the space to try and reach the organization that is ruling over their hometown to put an end to their abuse, but the outcome could be different from the one you'll expect."
+                    }
                   </p>
                   <p>
-                    Placeholder description with a lot of text and many
-                    paragraphs Placeholder description with a lot of text and
-                    many paragraphs Placeholder description with a lot of text
-                    and many paragraphs Placeholder description with a lot of
-                    text and many paragraphs Placeholder description with a lot
-                    of text and many paragraphs
+                    Battle your way through the diferent stages, learn more
+                    about the situation of your hometown and ultimately put an
+                    end to the tyranny that is affecting your world.
                   </p>
                 </div>
               </div>
@@ -254,20 +248,40 @@ export default function Press() {
                   HISTORY:
                 </h2>
                 <div className="flex flex-col gap-4">
-                  <p>Placeholder with a lot of text and many paragraphs</p>
                   <p>
-                    Placeholder with a lot of text and many paragraphs
-                    Placeholder with a lot of text and many paragraphs
-                    Placeholder with a lot of text and many paragraphs
-                    Placeholder with a lot of text and many paragraphs
-                    Placeholder with a lot of text and many paragraphs
+                    This game takes place on the planet Coltran, oppressed by an
+                    Evil Corporation sponsored by the Sith Empire, making it a
+                    hotbed of crime, poverty, slavery and outlawness.
                   </p>
                   <p>
-                    Placeholder with a lot of text and many paragraphs
-                    Placeholder with a lot of text and many paragraphs
-                    Placeholder with a lot of text and many paragraphs
-                    Placeholder with a lot of text and many paragraphs
-                    Placeholder with a lot of text and many paragraphs
+                    {`The protagonist, Bix, comes to the planet wanting riches of
+                    her own, but greed proves to be her downfall, as she is
+                    betrayed by the corporation’s Top Man, stripped of her
+                    beloved ship and thrown into the sewers to die.`}
+                  </p>
+                  <p>
+                    {`After enduring a harsh life in the sewers for 5 years, Bix
+                    resolves to exact her revenge, running away from the sewers
+                    and making her way into the hangars, where she’ll retrieve
+                    her ship and fly away into space.`}
+                  </p>
+                  <p>
+                    {`Having escaped and formulated a plan to kill the Top Man,
+                    the protagonist infiltrates the corporation’s space station
+                    (Hand of Dominion) through a maintenance tunnel, reaching
+                    the hangar bay and meeting who will become her new companion
+                    in this quest, Allura, who will help her taking down the
+                    corporation and liberating the planet of its influence.`}
+                  </p>
+                  <p>
+                    {`After some battling and crossing through the station’s
+                    bridge, both protagonists manage to kill Top Man in an epic
+                    battle.`}
+                  </p>
+                  <p>
+                    But it seems their goals were never the same, as what Bix
+                    really wanted is to take control of the organization for
+                    herself and her own beliefs.
                   </p>
                 </div>
               </div>
@@ -288,11 +302,8 @@ export default function Press() {
               before:bg-amber pl-8"
                   >
                     <p>
-                      <strong>A feature: </strong>
-                      Description of the feature with some text Description of
-                      the feature with some text Description of the feature with
-                      some text Description of the feature with some text
-                      Description of the feature with some text
+                      <strong>Brand new universe: </strong>
+                      {`Eventhough this is based in the Star Wars universe, you'll see new amazing original characters, an interesting plot and a whole new universe.`}
                     </p>
                   </li>
                   <li
@@ -300,11 +311,8 @@ export default function Press() {
               before:bg-amber pl-8"
                   >
                     <p>
-                      <strong>A feature: </strong>
-                      Description of the feature with some text Description of
-                      the feature with some text Description of the feature with
-                      some text Description of the feature with some text
-                      Description of the feature with some text
+                      <strong>Two-Player adventure: </strong>
+                      {`Alternate between Bix and Allura to make use of each one's power effectively.`}
                     </p>
                   </li>
                   <li
@@ -312,11 +320,40 @@ export default function Press() {
               before:bg-amber pl-8"
                   >
                     <p>
-                      <strong>A feature: </strong>
-                      Description of the feature with some text Description of
-                      the feature with some text Description of the feature with
-                      some text Description of the feature with some text
-                      Description of the feature with some text
+                      <strong>Force and melee: </strong>
+                      {`Bix used to be a jedi in training, due to that she keeps some fain force powers that, 
+                      together with her physical combat abilities, will help her make her way trough.`}
+                    </p>
+                  </li>
+                  <li
+                    className="relative before:absolute before:left-0 before:top-2 before:h-3 before:w-3 before:block before:rounded-3xl
+              before:bg-amber pl-8"
+                  >
+                    <p>
+                      <strong>Hacking and shooting: </strong>
+                      {`As an ex-convict, Allura is really well trained in combat, especially with anything gun related, 
+                      so together with her submachine gun and her ability to hack
+                      even the most intrincate security system, she could not be stopped.`}
+                    </p>
+                  </li>
+                  <li
+                    className="relative before:absolute before:left-0 before:top-2 before:h-3 before:w-3 before:block 
+                    before:rounded-3xl before:bg-amber pl-8"
+                  >
+                    <p>
+                      <strong>Combo your way trough the enemies: </strong>
+                      {`Make use of Bix's physical combat or Allura's shooting ability to chain attacks and deliver more powerful 
+                       blows to your enemies, you'll feel unbeatable!`}
+                    </p>
+                  </li>
+                  <li
+                    className="relative before:absolute before:left-0 before:top-2 before:h-3 before:w-3 before:block 
+                    before:rounded-3xl before:bg-amber pl-8"
+                  >
+                    <p>
+                      <strong>You decide the outcome: </strong>
+                      {`Upon reaching the final area, you'll decide who you'll ultimately stand by, 
+                      will you lend a hand to Bix's ambitious ideas or rather stick with Allura's firm determination?`}
                     </p>
                   </li>
                 </ul>
