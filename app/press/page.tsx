@@ -441,8 +441,9 @@ export default function Press() {
                   ABOUT HORIZONS GAMES:
                 </h2>
                 <p>
-                  Horizons Games was founded in 2023 by a group of students at
-                  UPC School in Barcelona.
+                  Horizons Games is an ambitious video game studio established
+                  in 2023 by a group of students at the UPC School in Barcelona
+                  that are making their debut on the games industry.
                 </p>
               </div>
             </article>

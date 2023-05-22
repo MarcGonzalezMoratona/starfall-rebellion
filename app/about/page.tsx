@@ -34,32 +34,21 @@ export default function About() {
               ABOUT
             </h1>
             <p className="text-white my-4 mx-4">
-              {`Established in 1984, Naughty Dog is one of the most successful and
-              prolific game development studios in the world and a flagship
-              first-party studio within PlayStation Studios. From creating the
-              iconic Crash Bandicoot and Jak and Daxter series to modern
-              franchises like Uncharted and The Last of Us, Naughty Dog is
-              responsible for some of the most critically acclaimed and
-              commercially successful games on Sony’s PlayStation platforms.
-              Through its use of cutting-edge technology and evocative,
-              character-driven storytelling, Naughty Dog has received hundreds
-              of industry and media awards, while developing a passionate fan
-              base of millions of players around the globe.`}
+              {`Horizons Games is an ambitious video game studio established in 2023 by a group of students 
+              at the UPC School in Barcelona that are making their debut on the games industry.`}
             </p>
             <p className="text-white my-4 mx-4">
-              {` Naughty Dog’s recent releases include 2016’s Uncharted 4: A
-              Thief’s End, winner of numerous Game of the Year awards, and
-              2017’s Uncharted: The Lost Legacy—a new standalone adventure in
-              the Uncharted series. By December 2017, total global sales for the
-              Uncharted franchise surpassed 41.7 million copies sold.`}
+              {`Our team consists of passionate software engineers and talented designers dedicated to explore 
+              new technologies and techniques to deliver a revolutionary gaming platform. 
+              Our goal is to create a flexible and powerful game engine that allows developers to bring 
+              their visions to life without restrictions. We have set ourselves the challenge of 
+              building a game engine completely from scratch, which we called Axolotl Engine.`}
             </p>
             <p className="text-white my-4 mx-4">
-              {`Naughty Dog's latest title is The Last of Us Part II, the
-              much-anticipated sequel to 2013’s The Last of Us, which is
-              available now for PlayStation 4. Naughty Dog is a wholly-owned
-              subsidiary of Sony Interactive Entertainment located in Santa
-              Monica, California. For more information, follow us on Twitter,
-              Facebook, or Instagram.`}
+              {`Horizons Games' latest title is Lego Star Wars: Starfall Rebellion, 
+              a two-player hack and slash game insipired by Lego Star Wars. Join us on this exciting journey 
+              as we build the future of games from the ground up! For more information, follow us on 
+              Twitter, YouTube, Tik Tok or Instagram.`}
             </p>
           </div>
           <div className="flex justify-center xl:flex-1 xl:relative mx-4 flex-col items-center xl:items-stretch xl:flex-row">
