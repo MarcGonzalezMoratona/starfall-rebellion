@@ -42,7 +42,7 @@ export default function Media() {
       <h1 className="mt-8 mb-4 text-4xl text-white font-semibold">MEDIA</h1>
       <section className="flex w-2/3 flex-col items-center justify-center gap-4">
         <h2 className="text-3xl text-white font-semibold">VIDEOS</h2>
-        <div className="flex flex-col gap-4 sm:flex-row">
+        {/* <div className="flex flex-col gap-4 sm:flex-row">
           {videoSourceMap.map((video) => {
             return (
               <video controls key={video.mobile} className="sm:w-1/2">
@@ -55,7 +55,7 @@ export default function Media() {
               </video>
             );
           })}
-        </div>
+        </div> */}
       </section>
       <section>
         <h2 className="text-3xl text-white font-semibold">WALLPAPERS</h2>
