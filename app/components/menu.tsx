@@ -29,7 +29,11 @@ export default function Menu() {
           />
         </span>
       </div>
-      <Link className="w-full flex justify-center my-8" href="/">
+      <Link
+        className="w-full flex justify-center my-8"
+        href="/"
+        onClick={() => toggleMenu()}
+      >
         <StarWars width={280} height={120} />
       </Link>
       <ul className="mx-8 py-8 text-lg flex flex-col gap-8">

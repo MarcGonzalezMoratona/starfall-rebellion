@@ -59,7 +59,7 @@ export default function About() {
               height={350}
               className="xl:absolute xl:top-0 xl:bottom-0 xl:my-auto rounded-xl"
             />
-            <div className="xl:flex xl:items-end my-4 xl:my-16">
+            <div className="xl:bottom-0 xl:absolute xl:flex xl:items-end my-4 xl:my-0">
               <CTA
                 label="MEET THE TEAM"
                 href="https://horizons-games.vercel.app/team"

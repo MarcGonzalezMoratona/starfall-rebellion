@@ -23,26 +23,26 @@ export default function Contact() {
             href="mailto:horizongamesbarcelona@gmail.com"
           >
             <div className="flex flex-col gap-4 items-center sm:items-stretch sm:w-[400px] mx-4">
-              <p className="text-amber text-lg xl:text-4xl font-semibold">
+              <p className="text-amber text-xl xl:text-4xl font-semibold">
                 NEED TO TALK?
               </p>
               <h2 className="text-white text-4xl xl:text-6xl font-bold">
                 CONTACT US
               </h2>
-              <p className="text-zinc-300 text-center sm:text-left">
+              <p className="text-zinc-300 text-center sm:text-left text-lg">
                 We value your thoughts and feedback!
               </p>
-              <p className="text-zinc-300 text-center sm:text-left">
+              <p className="text-zinc-300 text-center sm:text-left text-lg">
                 Your thoughts and ideas matter to us, and we value the
                 opportunity to connect with you. Feel free to share any feedback
                 or suggestions you have in mind.
               </p>
-              <p className="text-zinc-300 text-center sm:text-left">
+              <p className="text-zinc-300 text-center sm:text-left text-lg">
                 {`We're excited to engage in meaningful conversations with you!`}
               </p>
               <div className="flex gap-2 items-center justify-center">
                 <EnvelopeClosedIcon className="text-white h-4 w-4 sm:h-6 sm:w-6" />
-                <p className="text-white text-sm sm:text-lg hover:text-amber transition-colors duration-300">
+                <p className="text-white sm:text-lg hover:text-amber transition-colors duration-300">
                   horizongamesbarcelona@gmail.com
                 </p>
               </div>
