@@ -20,8 +20,10 @@ export default function NewsLetterSignUpForm() {
 
         method: "POST",
       });
-      if (res.status === 201) setSubscribed(true);
-      else if (!res.ok) setError(true);
+      if (res.status === 201) {
+        setSubscribed(true);
+        setError(false);
+      } else if (!res.ok) setError(true);
     }
   };
 
