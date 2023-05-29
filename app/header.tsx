@@ -1,14 +1,14 @@
-'use client';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import CTA from './components/cta';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
-import StarWars from './components/logos/star-wars';
-import Menu from './components/menu';
-import { useContext } from 'react';
-import { MenuContext } from './store/menu-context';
-import MenuLink from './components/menu-link';
-import { usePageType } from './hooks/usePage';
+"use client";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CTA from "./components/cta";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import StarWars from "./components/logos/star-wars";
+import Menu from "./components/menu";
+import { useContext } from "react";
+import { MenuContext } from "./store/menu-context";
+import MenuLink from "./components/menu-link";
+import { usePageType } from "./hooks/usePage";
 
 export default function Header() {
   const { toggleMenu } = useContext(MenuContext);
@@ -30,22 +30,23 @@ export default function Header() {
           <MenuLink
             url="/about"
             label="ABOUT"
-            selected={pageType === 'about'}
+            selected={pageType === "about"}
           />
           <MenuLink
             url="/media"
             label="MEDIA"
-            selected={pageType === 'media'}
+            selected={pageType === "media"}
           />
           <MenuLink
             url="/press"
             label="PRESS"
-            selected={pageType === 'press'}
+            selected={pageType === "press"}
           />
+          <MenuLink url="/news" label="NEWS" selected={pageType === "news"} />
           <MenuLink
             url="/contact"
             label="CONTACT"
-            selected={pageType === 'contact'}
+            selected={pageType === "contact"}
           />
         </ul>
         <CTA

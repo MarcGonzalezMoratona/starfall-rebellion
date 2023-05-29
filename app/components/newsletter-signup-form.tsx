@@ -63,7 +63,7 @@ export default function NewsLetterSignUpForm() {
               autoCorrect="off"
             />
             <button
-              className="bg-amber py-2 text-black text-lg font-semibold rounded-md"
+              className="bg-amber py-2 text-black text-lg font-semibold rounded-md hover:opacity-90 transition-opacity duration-300"
               type="submit"
               value=""
               name="subscribe"
