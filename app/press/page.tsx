@@ -34,14 +34,14 @@ export default function Press() {
   return (
     <main className="bg-zinc-900 w-full flex flex-col gap-4 items-center justify-center scroll-smooth">
       <section className="relative">
-        <Image src="/presskit-header.jpg" alt="" width={1920} height={600} />
-        <Image
+        {/* <Image src="/presskit-header.jpg" alt="" width={1920} height={600} /> */}
+        {/* <Image
           src="/temtem.png"
           alt=""
           width={isMobile ? 140 : isTablet ? 280 : 560}
           height={isMobile ? 59 : isTablet ? 118 : 236}
           className="absolute inset-0 m-auto"
-        />
+        /> */}
       </section>
       <div className="flex w-5/6 sm:w-2/3 py-12">
         <nav className="shrink-0 sticky py-4 mr-16 top-0 self-start lg:block hidden">
@@ -427,7 +427,7 @@ export default function Press() {
                 >
                   LOGOS & ICONS:
                 </h2>
-                <Image src="/temtem.png" alt="" width={280} height={118} />
+                {/* <Image src="/temtem.png" alt="" width={280} height={118} /> */}
               </div>
             </article>
           </section>
