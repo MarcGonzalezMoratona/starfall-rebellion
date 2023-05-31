@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState } from 'react';
 
 export default function NewsLetterSignUpForm() {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -9,16 +9,16 @@ export default function NewsLetterSignUpForm() {
     e.preventDefault();
 
     if (inputRef.current != null) {
-      const res = await fetch("/api/subscribeUser", {
+      const res = await fetch('/api/subscribeUser', {
         body: JSON.stringify({
-          email: inputRef.current.value || "",
+          email: inputRef.current.value || '',
         }),
 
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
 
-        method: "POST",
+        method: 'POST',
       });
       if (res.status === 201) {
         setSubscribed(true);
@@ -34,16 +34,13 @@ export default function NewsLetterSignUpForm() {
           You have successfully signed up to the newsletter!
         </p>
       ) : (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           {isError && (
             <p className="text-center w-full">
               Ooops! Something went wrong. Please, try again later.
             </p>
           )}
-          <form
-            onSubmit={subscribeUser}
-            className="flex flex-col gap-4 my-4 w-full"
-          >
+          <form onSubmit={subscribeUser} className="flex flex-col gap-4 my-4">
             <label
               htmlFor="email-input"
               className="text-white text-lg flex flex-col gap-2"

@@ -52,7 +52,7 @@ export default function Home() {
           </ul>
         </div>
       </section> */}
-      <section className="flex items-center h-96 sm:w-2/3 xl:w-1/3 px-4 w-full">
+      <section className="flex justify-center items-center h-96 sm:w-2/3 xl:w-1/3 px-4 w-full">
         <NewsLetterSignUpForm />
       </section>
       {/* <section className="w-1/3">
