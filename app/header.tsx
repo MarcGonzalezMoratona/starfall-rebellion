@@ -9,6 +9,7 @@ import { useContext } from 'react';
 import { MenuContext } from './store/menu-context';
 import MenuLink from './components/menu-link';
 import { usePageType } from './hooks/usePage';
+import StarfallRebellion from './components/logos/starfall-rebellion';
 
 export default function Header() {
   const { toggleMenu } = useContext(MenuContext);
@@ -23,15 +24,16 @@ export default function Header() {
             className="text-xl text-white h-6 w-6"
           />
         </span>
-        <ul className="md:flex gap-8 w-full hidden">
-          <Link className="mr-8" href="/">
-            <StarWars width={70} height={30} />
+        <ul className="md:flex gap-8 w-full hidden md:items-center">
+          <Link href="/">
+            <StarfallRebellion width={108} height={48} />
           </Link>
           <MenuLink
             url="/about"
             label="ABOUT"
             selected={pageType === 'about'}
           />
+          <MenuLink url="/team" label="TEAM" selected={pageType === 'team'} />
           <MenuLink
             url="/media"
             label="MEDIA"

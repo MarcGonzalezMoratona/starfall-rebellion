@@ -6,6 +6,7 @@ import { useContext } from 'react';
 import { MenuContext } from '../store/menu-context';
 import StarWars from './logos/star-wars';
 import MenuLink from './menu-link';
+import StarfallRebellion from './logos/starfall-rebellion';
 
 export default function Menu() {
   const { isMenuOpen, toggleMenu } = useContext(MenuContext);
@@ -34,10 +35,11 @@ export default function Menu() {
         href="/"
         onClick={() => toggleMenu()}
       >
-        <StarWars width={280} height={120} />
+        <StarfallRebellion width={298} height={132} />
       </Link>
       <ul className="mx-8 py-8 text-lg flex flex-col gap-8">
         <MenuLink url="/about" label="ABOUT" onClick={() => toggleMenu()} />
+        <MenuLink url="/team" label="TEAM" onClick={() => toggleMenu()} />
         <MenuLink url="/media" label="MEDIA" onClick={() => toggleMenu()} />
         <MenuLink url="/press" label="PRESS" onClick={() => toggleMenu()} />
         <MenuLink url="/contact" label="CONTACT" onClick={() => toggleMenu()} />

@@ -1,5 +1,17 @@
 import Image from 'next/image';
 
-export default function StarfallRebellion() {
-  return <Image src="/starfall-rebellion.png" alt="" width={70} height={30} />;
+type ImageProps = {
+  width: number;
+  height: number;
+};
+
+export default function StarfallRebellion({ width, height }: ImageProps) {
+  return (
+    <Image
+      src="/starfall-rebellion-logo.png"
+      alt="Starfall Rebellion logo"
+      width={width}
+      height={height}
+    />
+  );
 }

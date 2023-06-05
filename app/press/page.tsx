@@ -7,6 +7,7 @@ import { usePageHandler } from '../hooks/usePage';
 import { useDevice } from '../hooks/useDevice';
 import FullScreenSlider from '../components/fullscreen-slider';
 import { conceptArt } from '../data/concept-art';
+import StarfallRebellion from '../components/logos/starfall-rebellion';
 
 export default function Press() {
   const [selected, setSelected] = useState('');
@@ -427,7 +428,7 @@ export default function Press() {
                 >
                   LOGOS & ICONS:
                 </h2>
-                {/* <Image src="/temtem.png" alt="" width={280} height={118} /> */}
+                <StarfallRebellion width={298} height={132} />
               </div>
             </article>
           </section>
