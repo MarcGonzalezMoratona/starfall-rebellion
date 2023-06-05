@@ -22,12 +22,15 @@ export default function About() {
   return (
     <main className="bg-zinc-900 w-full flex flex-col items-center justify-center">
       <section className=" w-full md:w-2/3">
-        <div className="sm:flex-row flex-col flex gap-4 sm:gap-8 xl:gap-12 items-center justify-center font-ethnocentric h-48">
+        <a
+          href="https://horizons-games.vercel.app"
+          className="sm:flex-row flex-col flex gap-4 sm:gap-8 xl:gap-12 items-center justify-center font-ethnocentric h-48"
+        >
           <HorizonsWhite height={140} width={140} />
           <p className="text-white text-2xl sm:text-4xl text-center">
             HORIZONS GAMES
           </p>
-        </div>
+        </a>
         <div className="flex xl:flex-row flex-col xl:my-8 gap-16">
           <div className="flex flex-col flex-1">
             <h1 className="text-white text-2xl sm:text-3xl text-center my-4 font-medium">
