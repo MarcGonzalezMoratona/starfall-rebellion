@@ -5,10 +5,11 @@ import { useDevice } from '../hooks/useDevice';
 import FullScreenSlider from '../components/fullscreen-slider';
 import Image from 'next/image';
 import { conceptArt } from '../data/concept-art';
+import { gameImages } from '../data/game';
 
 export default function Media() {
   const PageHandler = usePageHandler();
-  const [isSliderOpen, setIsSliderOpen] = useState(false);
+  const [currentSlider, setCurrentSlider] = useState(-1);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const device = useDevice();
   const isMobile = device === 'mobile';
@@ -17,13 +18,13 @@ export default function Media() {
     PageHandler('media');
   });
 
-  const openSlider = (index: any) => {
+  const openSlider = (index: any, slider: number) => {
     setCurrentImageIndex(index);
-    setIsSliderOpen(true);
+    setCurrentSlider(slider);
   };
 
   const closeSlider = () => {
-    setIsSliderOpen(false);
+    setCurrentSlider(-1);
   };
 
   const videoSourceMap = [
@@ -40,6 +41,33 @@ export default function Media() {
   return (
     <main className="bg-zinc-900 w-full flex flex-col gap-8 items-center justify-center">
       <h1 className="mt-8 mb-4 text-4xl text-white font-semibold">MEDIA</h1>
+      <section className="flex w-full flex-col items-center justify-center text-white">
+        <h2 className="text-3xl text-white font-semibold">IMAGES</h2>
+        <div className="my-8 mx-8 flex flex-col items-center justify-center gap-4 sm:grid sm:grid-cols-2 md:w-2/3 xl:grid-cols-3">
+          {gameImages.map((image, index) => (
+            <span key={image.url.split('.')[0]}>
+              <div className="my-4">
+                <Image
+                  onClick={() => openSlider(index, 0)}
+                  className="cursor-pointer"
+                  src={image.url}
+                  width={1920}
+                  height={1080}
+                  alt={image.description}
+                />
+              </div>
+              <p className="text-center">{image.description}</p>
+            </span>
+          ))}
+          <FullScreenSlider
+            images={gameImages}
+            isSliderOpen={currentSlider === 0}
+            closeSlider={closeSlider}
+            currentImageIndex={currentImageIndex}
+            setCurrentImageIndex={setCurrentImageIndex}
+          />
+        </div>
+      </section>
       <section className="flex w-2/3 flex-col items-center justify-center gap-4">
         <h2 className="text-3xl text-white font-semibold">VIDEOS</h2>
         {/* <div className="flex flex-col gap-4 sm:flex-row">
@@ -67,7 +95,7 @@ export default function Media() {
             <span key={image.url.split('.')[0]}>
               <div className="my-4">
                 <Image
-                  onClick={() => openSlider(index)}
+                  onClick={() => openSlider(index, 1)}
                   className="cursor-pointer"
                   src={image.url}
                   width={1920}
@@ -80,7 +108,7 @@ export default function Media() {
           ))}
           <FullScreenSlider
             images={conceptArt}
-            isSliderOpen={isSliderOpen}
+            isSliderOpen={currentSlider === 1}
             closeSlider={closeSlider}
             currentImageIndex={currentImageIndex}
             setCurrentImageIndex={setCurrentImageIndex}
