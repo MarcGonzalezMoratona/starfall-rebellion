@@ -84,7 +84,7 @@ export default function Press() {
               </a>
             </li>
             <li
-              className={` text-lg hover:text-amber ${
+              className={`text-lg hover:text-amber ${
                 selected === 'features'
                   ? 'bg-amber text-black font-semibold hover:text-black'
                   : 'text-white'
