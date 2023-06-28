@@ -5,6 +5,7 @@ import SocialNetworks from './components/social-networks';
 import socialNetworks from './data/social-networks';
 import { usePageHandler } from './hooks/usePage';
 import NewsLetterSignUpForm from './components/newsletter-signup-form';
+import StarfallRebellion from './components/logos/starfall-rebellion';
 
 export default function Home() {
   const PageHandler = usePageHandler();
@@ -16,16 +17,17 @@ export default function Home() {
   return (
     <main className="bg-zinc-900 w-full flex flex-col items-center justify-center">
       <section className="flex flex-col justify-center gap-4 items-center h-96">
-        <h1 className="text-white text-3xl sm:text-7xl font-semibold">
+        <StarfallRebellion width={500} height={500} />
+        {/* <h1 className="text-white text-3xl sm:text-7xl font-semibold">
           LEGO STAR WARS:
         </h1>
         <h2 className="text-white text-2xl sm:text-5xl font-semibold">
           STARFALL REBELLION
-        </h2>
+        </h2> */}
         <p className="text-white sm:text-xl">ACTION-ADVENTURE · FREE TO PLAY</p>
         <CTA
           label="DOWNLOAD"
-          href="https://github.com/Horizons-Games/Axolotl-Engine/releases"
+          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.5.0/Starfall.Rebellion.0.5.0.zip"
           className="hidden sm:block"
         />
       </section>
