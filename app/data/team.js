@@ -132,11 +132,12 @@ export const team = {
     {
       name: 'Marc González',
       image: 'MarcGonzalez.jpg',
-      primaryRole: 'Community Manager',
+      primaryRole: 'Community Manager & Lead Web Developer',
       secondaryRole: 'Engine Programmer',
       networks: {
         github: 'https://www.github.com/MarcGonzalezMoratona',
         linkedin: 'https://www.linkedin.com/in/marc-gonzalez-moratona',
+        website: 'https://marc-gonzalez-moratona.vercel.app',
       },
     },
     {
