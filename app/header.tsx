@@ -43,7 +43,7 @@ export default function Header() {
             label="PRESS"
             selected={pageType === 'press'}
           />
-          <MenuLink url="/news" label="NEWS" selected={pageType === 'news'} />
+          {/* <MenuLink url="/news" label="NEWS" selected={pageType === 'news'} /> */}
           <MenuLink
             url="/contact"
             label="CONTACT"
@@ -53,7 +53,7 @@ export default function Header() {
         <CTA
           className="hidden sm:block"
           label="DOWNLOAD"
-          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.5.0/Starfall.Rebellion.0.5.0.zip"
+          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.6.0/Starfall.Rebellion.0.6.0.zip"
         />
       </header>
       <Menu />

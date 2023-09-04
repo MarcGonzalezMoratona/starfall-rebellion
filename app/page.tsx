@@ -37,19 +37,19 @@ export default function Home() {
         </p>
         <CTA
           label="DOWNLOAD"
-          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.5.0/Starfall.Rebellion.0.5.0.zip"
+          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.6.0/Starfall.Rebellion.0.6.0.zip"
           className="hidden sm:block"
           size="lg"
         />
-        <Link href="#latest-news">
+        {/* <Link href="#latest-news">
           <ChevronDownIcon
             className="h-12 w-12 cursor-pointer rounded-full my-8
           bg-royalPurple p-2 text-neutral-100 
           sm:transition-transform sm:duration-300 sm:hover:translate-y-1"
           />
-        </Link>
+        </Link> */}
       </section>
-      <section
+      {/* <section
         className="lg:h-screen w-full flex flex-col justify-center items-center bg-royalPurple gap-8"
         id="latest-news"
       >
@@ -81,7 +81,7 @@ export default function Home() {
             />
           )}
         </div>
-      </section>
+      </section> */}
       {/* <section className="flex justify-center items-center h-96 px-4 w-full bg-royalPurple gap-16">
         <div className="flex flex-col w-1/3 h-64">
           <h2 className="text-white text-2xl font-semibold">
@@ -95,7 +95,9 @@ export default function Home() {
         <div className="flex flex-col w-1/3 h-64">
           <h2 className="text-white text-2xl font-semibold">FEATURES</h2>
           <ul>
-            <li className="text-white">A feature</li>
+            <li className="text-white">
+              Play with your keyboard or controller
+            </li>
             <li className="text-white">A feature</li>
             <li className="text-white">A feature</li>
             <li className="text-white">A feature</li>

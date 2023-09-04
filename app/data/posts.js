@@ -1,4 +1,6 @@
-export const posts = [
+export const posts = [];
+
+const examplePosts = [
   {
     id: 1,
     title: 'Starfall Rebellion: ALPHA RELEASE',
