@@ -8,7 +8,7 @@ type ImageProps = {
 export default function StarfallRebellion({ width, height }: ImageProps) {
   return (
     <Image
-      src="/starfall-rebellion-logo.png"
+      src="/starfall-rebellion.png"
       alt="Starfall Rebellion logo"
       width={width}
       height={height}

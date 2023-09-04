@@ -20,7 +20,7 @@ export default function Menu() {
     >
       <div className="flex m-4">
         <span
-          className="bg-zinc-700 rounded-md flex items-center justify-center p-2"
+          className="bg-royalPurple rounded-md flex items-center justify-center p-2"
           onClick={() => toggleMenu()}
         >
           <FontAwesomeIcon
@@ -41,7 +41,7 @@ export default function Menu() {
         <MenuLink url="/team" label="TEAM" onClick={() => toggleMenu()} />
         <MenuLink url="/media" label="MEDIA" onClick={() => toggleMenu()} />
         <MenuLink url="/press" label="PRESS" onClick={() => toggleMenu()} />
-        {/* <MenuLink url="/news" label="NEWS" onClick={() => toggleMenu()} /> */}
+        <MenuLink url="/news" label="NEWS" onClick={() => toggleMenu()} />
         <MenuLink url="/contact" label="CONTACT" onClick={() => toggleMenu()} />
       </ul>
     </nav>

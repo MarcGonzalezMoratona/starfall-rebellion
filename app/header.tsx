@@ -25,7 +25,7 @@ export default function Header() {
         </span>
         <ul className="md:flex gap-8 w-full hidden md:items-center">
           <Link href="/">
-            <StarfallRebellion width={108} height={48} />
+            <StarfallRebellion width={140} height={48} />
           </Link>
           <MenuLink
             url="/about"
@@ -43,7 +43,7 @@ export default function Header() {
             label="PRESS"
             selected={pageType === 'press'}
           />
-          {/* <MenuLink url="/news" label="NEWS" selected={pageType === 'news'} /> */}
+          <MenuLink url="/news" label="NEWS" selected={pageType === 'news'} />
           <MenuLink
             url="/contact"
             label="CONTACT"
@@ -53,7 +53,7 @@ export default function Header() {
         <CTA
           className="hidden sm:block"
           label="DOWNLOAD"
-          href="https://github.com/Horizons-Games/Axolotl-Engine/releases"
+          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.5.0/Starfall.Rebellion.0.5.0.zip"
         />
       </header>
       <Menu />
