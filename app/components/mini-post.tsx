@@ -9,6 +9,7 @@ type MiniPostProps = {
     slug: string;
     id: number;
     title: string;
+    subtitle: string;
     alt?: string;
     caption?: string;
   };
@@ -38,9 +39,9 @@ export default function MiniPost({ data }: MiniPostProps) {
             <h1 className="my-6 text-xl font-medium text-white">
               {data.title}
             </h1>
-            {/* <div className="my-4">
-              <p className="text-white">{data.paragraphs[0].content}</p>
-            </div> */}
+            <div className="my-4 text-lg">
+              <h2 className="text-white">{data.subtitle}</h2>
+            </div>
           </div>
           <Button
             icon={<FontAwesomeIcon icon={faArrowRight} className="ml-3" />}
