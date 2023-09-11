@@ -23,7 +23,7 @@ export default function MiniPost({ data }: MiniPostProps) {
       >
         <div className="relative h-48 w-full">
           <Image
-            src={`${data.caption ? `/blog/${data.caption}` : '/horizons.svg'}`}
+            src={`${data.caption ? `/${data.caption}` : '/horizons.svg'}`}
             alt={data.alt || 'horizons logo'}
             fill
             className="object-contain select-none"
