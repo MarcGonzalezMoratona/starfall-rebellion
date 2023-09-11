@@ -1,4 +1,3 @@
-import { GetStaticProps } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -25,7 +24,7 @@ export default function Post({ data }: PostProps) {
       >
         <div className="relative h-48 w-full sm:h-64">
           <Image
-            src={`${data.caption ? `/blog/${data.caption}` : '/horizons.svg'}`}
+            src={`${data.caption ? `/${data.caption}` : '/horizons.svg'}`}
             alt={data.alt || 'horizons logo'}
             fill
             className="object-contain select-none"
