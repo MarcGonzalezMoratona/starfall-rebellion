@@ -41,13 +41,13 @@ export default function Home() {
           className="hidden sm:block"
           size="lg"
         />
-        {/* <Link href="#latest-news">
+        <Link href="#latest-news">
           <ChevronDownIcon
             className="h-12 w-12 cursor-pointer rounded-full my-8
           bg-royalPurple p-2 text-neutral-100 
           sm:transition-transform sm:duration-300 sm:hover:translate-y-1"
           />
-        </Link> */}
+        </Link>
       </section>
       <section
         className="w-full flex flex-col justify-center items-center bg-royalPurple gap-8"

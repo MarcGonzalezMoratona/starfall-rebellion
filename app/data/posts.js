@@ -1,6 +1,4 @@
-export const posts = [];
-
-const examplePosts = [
+export const posts = [
   {
     id: 1,
     slug: 'starfall-rebellion-alpha-release',
