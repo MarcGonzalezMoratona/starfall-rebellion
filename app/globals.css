@@ -52,4 +52,28 @@ body {
   html {
     scroll-behavior: smooth;
   }
+  ::selection {
+    color: rgb(24, 24, 27);
+    background: rgb(255, 193, 7);
+  }
+}
+
+.markdown p {
+  @apply my-4 text-white;
+}
+
+.markdown h2 {
+  @apply text-xl md:text-3xl my-2 md:my-4 text-white;
+}
+
+.markdown h3 {
+  @apply text-lg md:text-2xl my-2 md:my-4 text-white;
+}
+
+.markdown a {
+  @apply text-amber underline font-medium break-words;
+}
+
+.markdown table {
+  @apply text-xs sm:text-sm md:text-base w-full text-left text-white;
 }

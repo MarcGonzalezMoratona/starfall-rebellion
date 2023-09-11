@@ -12,6 +12,7 @@ export default function StarfallRebellion({ width, height }: ImageProps) {
       alt="Starfall Rebellion logo"
       width={width}
       height={height}
+      className="select-none"
     />
   );
 }

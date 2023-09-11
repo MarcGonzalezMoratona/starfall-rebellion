@@ -6,6 +6,7 @@ import { MenuContextProvider } from './store/menu-context';
 import { DeviceContextProvider } from './store/device-context';
 import { PageContextProvider } from './store/page-context';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
               <Header />
               {children}
               <Footer />
+              <Analytics />
             </MenuContextProvider>
           </PageContextProvider>
         </DeviceContextProvider>

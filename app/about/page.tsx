@@ -26,7 +26,7 @@ export default function About() {
           href="https://horizons-games.vercel.app"
           className="sm:flex-row flex-col flex gap-4 sm:gap-8 xl:gap-12 items-center justify-center font-ethnocentric h-48"
         >
-          <HorizonsWhite height={140} width={140} />
+          <HorizonsWhite height={140} width={140} className="select-none" />
           <p className="text-white text-2xl sm:text-4xl text-center">
             HORIZONS GAMES
           </p>
@@ -60,7 +60,7 @@ export default function About() {
               alt=""
               width={600}
               height={350}
-              className="xl:absolute xl:top-0 xl:bottom-0 xl:my-auto rounded-xl"
+              className="xl:absolute xl:top-0 xl:bottom-0 xl:my-auto rounded-xl select-none"
             />
             <div className="xl:bottom-0 xl:absolute xl:flex xl:items-end my-4 xl:my-0">
               <CTA

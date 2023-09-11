@@ -25,13 +25,13 @@ export default function Footer() {
       <section className="flex sm:flex-row flex-col gap-4 w-3/4 sm:gap-0 sm:items-center justify-between py-4 sm:py-8 sm:w-2/3">
         <div className="flex items-center gap-6">
           <Link href="https://horizons-games.vercel.app">
-            <HorizonsWhite height={48} width={48} />
+            <HorizonsWhite height={48} width={48} className="select-none" />
           </Link>
-          <LEGO />
+          <LEGO className="select-none" />
           <StarWars width={70} height={30} />
         </div>
         <div className="flex items-center gap-6">
-          <PEGI7 />
+          <PEGI7 className="select-none" />
         </div>
       </section>
       <section className="w-3/4 sm:w-2/3">

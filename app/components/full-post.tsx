@@ -61,7 +61,7 @@ const FullPost = ({ data }: FullPostProps) => {
                     src={`/blog/${paragraph.image}`}
                     alt={data[id].alt || 'horizons logo'}
                     fill
-                    className="object-contain"
+                    className="object-contain select-none"
                     sizes="(min-width: 320px) 640px, (min-width: 640px) 720px (min-width: 768px) 1080px"
                   />
                 </div>
