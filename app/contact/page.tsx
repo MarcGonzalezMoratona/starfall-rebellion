@@ -16,7 +16,13 @@ export default function Contact() {
   return (
     <main className="bg-zinc-900 w-full flex flex-col gap-32 items-center justify-center">
       <section className="flex flex-col xl:flex-row h-screen items-center justify-center gap-4 bg-zinc-900 w-full">
-        <Image src="/characters.png" alt="" width={750} height={500} />
+        <Image
+          src="/characters.png"
+          alt=""
+          width={750}
+          height={500}
+          className="select-none"
+        />
         <div className="flex flex-col gap-4">
           <Link
             className="flex flex-col gap-2"

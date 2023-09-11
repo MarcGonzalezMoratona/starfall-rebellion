@@ -1,4 +1,3 @@
-import { GetStaticProps } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -7,22 +6,17 @@ import Button from './button';
 
 type MiniPostProps = {
   data: {
+    slug: string;
     id: number;
     title: string;
     alt?: string;
     caption?: string;
-    paragraphs: {
-      heading?: string;
-      content: string;
-      image?: string;
-    }[];
   };
-  locale?: string;
 };
 
-export default function MiniPost({ data, locale }: MiniPostProps) {
+export default function MiniPost({ data }: MiniPostProps) {
   return (
-    <Link href={`/news/${data.id}`} locale={locale}>
+    <Link href={`/news/${data.slug}`}>
       <article
         className="mx-4 my-4 flex flex-col overflow-hidden rounded-lg pt-4 
       shadow-md hover:shadow-lg bg-zinc-950 hover:outline-amber hover:outline transition-all duration-150"
@@ -32,7 +26,7 @@ export default function MiniPost({ data, locale }: MiniPostProps) {
             src={`${data.caption ? `/blog/${data.caption}` : '/horizons.svg'}`}
             alt={data.alt || 'horizons logo'}
             fill
-            className="object-contain"
+            className="object-contain select-none"
             sizes="(min-width: 320px) 720px"
           />
         </div>
@@ -44,9 +38,9 @@ export default function MiniPost({ data, locale }: MiniPostProps) {
             <h1 className="my-6 text-xl font-medium text-white">
               {data.title}
             </h1>
-            <div className="my-4">
+            {/* <div className="my-4">
               <p className="text-white">{data.paragraphs[0].content}</p>
-            </div>
+            </div> */}
           </div>
           <Button
             icon={<FontAwesomeIcon icon={faArrowRight} className="ml-3" />}
@@ -58,9 +52,3 @@ export default function MiniPost({ data, locale }: MiniPostProps) {
     </Link>
   );
 }
-
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  return {
-    props: { locale },
-  };
-};

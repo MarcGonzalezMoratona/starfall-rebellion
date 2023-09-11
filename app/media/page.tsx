@@ -49,7 +49,7 @@ export default function Media() {
               <div className="my-4">
                 <Image
                   onClick={() => openSlider(index, 0)}
-                  className="cursor-pointer"
+                  className="cursor-pointer select-none"
                   src={image.url}
                   width={1920}
                   height={1080}
@@ -96,7 +96,7 @@ export default function Media() {
               <div className="my-4">
                 <Image
                   onClick={() => openSlider(index, 1)}
-                  className="cursor-pointer"
+                  className="cursor-pointer select-none"
                   src={image.url}
                   width={1920}
                   height={1080}

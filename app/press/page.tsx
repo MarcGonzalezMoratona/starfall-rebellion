@@ -206,7 +206,7 @@ export default function Press() {
                 </li>
                 <li className="border-b border-white py-2">
                   <p className="font-semibold">Release date:</p>
-                  <p>November 10th, 2023</p>
+                  <p>November 17th, 2023</p>
                 </li>
               </ul>
             </article>
@@ -398,7 +398,7 @@ export default function Press() {
                       <div className="my-4">
                         <Image
                           onClick={() => openSlider(index)}
-                          className="cursor-pointer"
+                          className="cursor-pointer select-none"
                           src={image.url}
                           width={1920}
                           height={1080}
@@ -494,12 +494,12 @@ export default function Press() {
                     </Link>
                   </li>
                   <li className="py-2">
-                    <p className="font-semibold">Twitter</p>
+                    <p className="font-semibold">X</p>
                     <Link
-                      href="https://twitter.com/horizons_games"
+                      href="https://x.com/horizons_games"
                       className="underline text-amber font-semibold hover:text-white"
                     >
-                      twitter.com/horizons_games
+                      x.com/horizons_games
                     </Link>
                   </li>
                   <li className="py-2">

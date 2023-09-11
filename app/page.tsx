@@ -50,7 +50,7 @@ export default function Home() {
         </Link>
       </section>
       <section
-        className="lg:h-screen w-full flex flex-col justify-center items-center bg-royalPurple gap-8"
+        className="w-full flex flex-col justify-center items-center bg-royalPurple gap-8"
         id="latest-news"
       >
         <h2 className="text-neutral-100 text-4xl font-bold my-8">
@@ -64,7 +64,7 @@ export default function Home() {
           sm:transition-transform sm:duration-300 sm:hover:translate-y-1"
             />
           )}
-          <div className="flex flex-col justify-center items-center w-full sm:grid sm:grid-cols-2 lg:w-2/3">
+          <div className="flex flex-col justify-center items-center w-full sm:grid sm:grid-cols-2 xl:w-2/3">
             {sortedPosts.map((post) => {
               return (
                 <React.Fragment key={post.id}>

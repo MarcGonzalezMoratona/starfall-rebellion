@@ -12,7 +12,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 type SocialNetworksProps = {
   networks?: {
-    twitter?: string;
+    x?: string;
     instagram?: string;
     youtube?: string;
     tiktok?: string;
@@ -33,11 +33,11 @@ const SocialNetworks = ({
     <div
       className={`flex items-center h-full gap-2 text-3xl sm:gap-4 lg:gap-8 sm:text-2xl ${className}`}
     >
-      {networks?.twitter && (
+      {networks?.x && (
         <Link
-          href={networks.twitter}
+          href={networks.x}
           target="_blank"
-          aria-label="Take a look at our twitter account"
+          aria-label="Take a look at our X account"
         >
           <FontAwesomeIcon
             icon={faTwitter}
