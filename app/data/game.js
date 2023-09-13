@@ -20,11 +20,11 @@ export const gameImages = [
     description: 'Hangar',
   },
   {
-    url: '/sewer.png',
+    url: '/sewers.png',
     description: 'Sewers',
   },
   {
-    url: '/sewerCorridor.png',
+    url: '/sewersCorridor.png',
     description: 'Sewers Corridor',
   },
 ];
