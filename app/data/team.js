@@ -85,7 +85,7 @@ export const team = {
     {
       name: 'David Martín',
       image: 'DavidMartin.jpg',
-      primaryRole: 'Lead Level Designer',
+      primaryRole: 'Lead Level Programmer',
       secondaryRole: 'Physics Programmer',
       networks: {
         github: 'https://github.com/Dedado3000',
