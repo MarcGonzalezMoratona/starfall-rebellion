@@ -10,7 +10,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col items-center bg-zinc-800 w-full h-80 sm:px-12">
+    <footer className="flex flex-col items-center bg-zinc-800 w-full sm:px-8 py-8">
       <section className="flex flex-col gap-4 sm:w-2/3 w-3/4 border-b py-4 sm:py-8 border-zinc-400">
         <div className="flex sm:flex-row flex-col w-full sm:items-center justify-between text-white text-sm font-semibold">
           <p>LEGO STAR WARS: Starfall Rebellion</p>
@@ -34,8 +34,9 @@ export default function Footer() {
           <PEGI7 className="select-none" />
         </div>
       </section>
-      <section className="w-3/4 sm:w-2/3">
+      <section className="flex flex-col lg:flex-row justify-between w-3/4 sm:w-2/3">
         <p className="text-white text-sm">{`© ${currentYear} Horizons Games`}</p>
+        <p className="text-white text-sm">{`Designed and developed by Marc González Moratona`}</p>
       </section>
     </footer>
   );

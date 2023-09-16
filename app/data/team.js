@@ -9,14 +9,6 @@ export const team = {
       },
     },
     {
-      name: 'David García',
-      image: 'DavidGarcia.jpg',
-      primaryRole: 'UX/UI Programmer',
-      networks: {
-        github: 'https://github.com/DGMC117',
-      },
-    },
-    {
       name: 'Diego Mejía',
       image: 'DiegoMejia.jpg',
       primaryRole: 'Producer',
@@ -46,20 +38,10 @@ export const team = {
       },
     },
     {
-      name: 'Santiago Carbó',
-      image: 'SantiagoCarbo.jpg',
-      primaryRole: 'Graphics Programmer',
-      secondaryRole: 'Animation Programmer',
-      networks: {
-        github: 'https://github.com/sncarbo',
-        linkedin: 'https://www.linkedin.com/in/santiago-carb%C3%B3-00805510b',
-        website: 'https://santiago-carbo.com',
-      },
-    },
-    {
       name: 'Pedro González-Anta',
       image: 'PeterGonzalez.jpg',
       primaryRole: 'Engine Programmer',
+      secondaryRole: 'Gameplay Programmer',
       networks: {
         github: 'https://github.com/Piterga12',
       },
@@ -75,20 +57,22 @@ export const team = {
       },
     },
     {
-      name: 'Andrés Machado',
-      image: 'AndresMachado.jpg',
-      primaryRole: 'Level Designer',
-      networks: {
-        github: 'https://github.com/AndresM2',
-      },
-    },
-    {
       name: 'David Martín',
       image: 'DavidMartin.jpg',
       primaryRole: 'Lead Level Programmer',
       secondaryRole: 'Physics Programmer',
       networks: {
         github: 'https://github.com/Dedado3000',
+      },
+    },
+    {
+      name: 'Marc Alcón',
+      image: 'MarcAlcon.jpg',
+      primaryRole: 'Lead Gameplay Programmer',
+      networks: {
+        github: 'https://github.com/markmeliaa',
+        linkedin: 'https://www.linkedin.com/in/markmeliaa',
+        website: 'https://markmeliaa.github.io',
       },
     },
     {
@@ -103,11 +87,13 @@ export const team = {
       },
     },
     {
-      name: 'Arnau Pérez',
-      image: 'ArnauPerez.jpg',
-      primaryRole: 'Engine Programmer',
+      name: 'Eric Dacal',
+      image: 'EricDacal.jpg',
+      primaryRole: 'Art Director',
+      secondaryRole: 'Engine Programmer',
       networks: {
-        github: 'https://github.com/Mondagh',
+        github: 'https://github.com/ericdacal',
+        linkedin: 'https://www.linkedin.com/in/erdasa',
       },
     },
     {
@@ -132,7 +118,7 @@ export const team = {
     {
       name: 'Marc González',
       image: 'MarcGonzalez.jpg',
-      primaryRole: 'Community Manager & Lead Web Developer',
+      primaryRole: 'Gameplay Programmer',
       secondaryRole: 'Engine Programmer',
       networks: {
         github: 'https://www.github.com/MarcGonzalezMoratona',
@@ -185,39 +171,46 @@ export const team = {
       },
     },
     {
-      name: 'Marc Alcón',
-      image: 'MarcAlcon.jpg',
-      primaryRole: 'Lead Gameplay Programmer',
+      name: 'Santiago Carbó',
+      image: 'SantiagoCarbo.jpg',
+      primaryRole: 'Graphics Programmer',
+      secondaryRole: 'Animation Programmer',
       networks: {
-        github: 'https://github.com/markmeliaa',
-        linkedin: 'https://www.linkedin.com/in/markmeliaa',
-        website: 'https://markmeliaa.github.io',
+        github: 'https://github.com/sncarbo',
+        linkedin: 'https://www.linkedin.com/in/santiago-carb%C3%B3-00805510b',
+        website: 'https://santiago-carbo.com',
       },
     },
     {
       name: 'Jesús Miguel Adrián',
       image: 'JesusMiguelAdrian.jpg',
-      primaryRole: 'Engine Programmer',
+      primaryRole: 'Programmer',
       networks: {
         github: 'https://github.com/elbuho12Jesus',
       },
     },
     {
+      name: 'David García',
+      image: 'DavidGarcia.jpg',
+      primaryRole: 'Programmer',
+      networks: {
+        github: 'https://github.com/DGMC117',
+      },
+    },
+    {
       name: 'Jan Marc Costa',
       image: 'JanMarcCosta.jpg',
-      primaryRole: 'UX/UI Programmer',
+      primaryRole: 'Programmer',
       networks: {
         github: 'https://github.com/TheGeminis',
       },
     },
     {
-      name: 'Eric Dacal',
-      image: 'EricDacal.jpg',
-      primaryRole: 'Art Director',
-      secondaryRole: 'Engine Programmer',
+      name: 'Andrés Machado',
+      image: 'AndresMachado.jpg',
+      primaryRole: 'Programmer',
       networks: {
-        github: 'https://github.com/ericdacal',
-        linkedin: 'https://www.linkedin.com/in/erdasa',
+        github: 'https://github.com/AndresM2',
       },
     },
   ],
