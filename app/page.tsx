@@ -7,6 +7,7 @@ import { usePageHandler } from './hooks/usePage';
 import NewsLetterSignUpForm from './components/newsletter-signup-form';
 import StarfallRebellion from './components/logos/starfall-rebellion';
 import { posts } from './data/posts';
+import { songs } from './data/songs';
 import MiniPost from './components/mini-post';
 import {
   ChevronDownIcon,
@@ -14,6 +15,8 @@ import {
   ChevronRightIcon,
 } from '@radix-ui/react-icons';
 import Link from 'next/link';
+import Image from 'next/image';
+import Song from './components/song';
 
 export default function Home() {
   const PageHandler = usePageHandler();
@@ -50,12 +53,10 @@ export default function Home() {
         </Link>
       </section>
       <section
-        className="w-full flex flex-col justify-center items-center bg-royalPurple gap-8"
+        className="w-full flex flex-col justify-center items-center gap-8 py-8 bg-royalPurple"
         id="latest-news"
       >
-        <h2 className="text-neutral-100 text-4xl font-bold my-8">
-          LATEST NEWS
-        </h2>
+        <h2 className="text-neutral-100 text-4xl font-bold">LATEST NEWS</h2>
         <div className="flex w-full justify-center items-center gap-16">
           {posts.length > 2 && (
             <ChevronLeftIcon
@@ -107,6 +108,65 @@ export default function Home() {
           </ul>
         </div>
       </section> */}
+      <section className="flex flex-col justify-center items-center w-full bg-darkPurple py-8">
+        <h2 className="text-neutral-100 text-4xl font-bold my-8">CHARACTERS</h2>
+        <div className="grid xl:grid-cols-2 w-full">
+          <div className="flex flex-col items-center gap-4">
+            <h3 className="text-neutral-100 text-4xl font-bold">Bix</h3>
+            <p className="text-neutral-100 text-2xl">Main ability: Force</p>
+            <p className="text-neutral-100 text-2xl">Combat type: Melee</p>
+            <div className="flex flex-col md:flex-row gap-4 my-4">
+              <Image
+                src="/characters/BixProfile.png"
+                width={300}
+                height={300}
+                alt="Bix profile picture"
+              />
+              <Image
+                src="/characters/BixDescription.png"
+                width={300}
+                height={300}
+                alt="Bix description"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <h3 className="text-neutral-100 text-4xl font-bold">Allura</h3>
+            <p className="text-neutral-100 text-2xl">Main ability: Hacking</p>
+            <p className="text-neutral-100 text-2xl">Combat type: Ranged</p>
+            <div className="flex flex-col md:flex-row gap-4 my-4">
+              <Image
+                src="/characters/AlluraProfile.png"
+                width={300}
+                height={300}
+                alt="Allura profile picture"
+              />
+              <Image
+                src="/characters/AlluraDescription.png"
+                width={300}
+                height={300}
+                alt="Allura description"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col justify-center items-center px-4 py-8 w-full bg-royalPurple">
+        <h2 className="text-neutral-100 text-4xl font-bold my-8">MUSIC</h2>
+        <p className="text-white text-lg">
+          Our team is collaborating with Escola Superior de Música de Catalunya
+          - ESMUC, that composed Starfall Rebellion OST
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-center items-center gap-8 py-8">
+          {songs.map((song) => {
+            return (
+              <React.Fragment key={song.id}>
+                <Song title={song.title} filename={song.file} />
+              </React.Fragment>
+            );
+          })}
+        </div>
+      </section>
       <section className="flex justify-center items-center h-96 sm:w-2/3 xl:w-1/3 px-4 w-full">
         <NewsLetterSignUpForm />
       </section>
