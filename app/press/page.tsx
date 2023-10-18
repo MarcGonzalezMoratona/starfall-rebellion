@@ -250,9 +250,10 @@ export default function Press() {
                 </h2>
                 <div className="flex flex-col gap-4">
                   <p>
-                    This game takes place on the planet Coltran, oppressed by an
-                    Evil Corporation sponsored by the Sith Empire, making it a
-                    hotbed of crime, poverty, slavery and outlawness.
+                    LEGO Star Wars: Starfall Rebellion is a two-player hack and
+                    slash game that takes place on the planet Coltran, oppressed
+                    by an Evil Corporation sponsored by the Sith Empire, making
+                    it a hotbed of crime, poverty and outlawness.
                   </p>
                   <p>
                     {`The protagonist, Bix, comes to the planet wanting riches of

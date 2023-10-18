@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     default: 'LEGO Star Wars: Starfall Rebellion',
     template: '%s | LEGO Star Wars: Starfall Rebellion',
   },
-  description:
-    'LEGO Star Wars: Starfall Rebellion is a two-player hack and slash game insipired by Lego Star Wars.',
+  description: `LEGO Star Wars: Starfall Rebellion is a two-player hack and slash game that takes place in Coltran,
+    a planet oppressed by an Evil Corporation, which is full of poverty and outlawness.`,
   metadataBase: new URL('https://starfall-rebellion.vercel.app'),
   viewport: 'width=device-width, initial-scale=1',
   creator: 'Horizons Games',
