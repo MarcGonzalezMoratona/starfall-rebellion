@@ -44,7 +44,9 @@ export default function MiniPost({ data }: MiniPostProps) {
             </div>
           </div>
           <Button
-            icon={<FontAwesomeIcon icon={faArrowRight} className="ml-3" />}
+            icon={
+              <FontAwesomeIcon icon={faArrowRight} className="ml-3 h-5 w-5" />
+            }
           >
             READ MORE
           </Button>
