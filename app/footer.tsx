@@ -30,9 +30,9 @@ export default function Footer() {
           <LEGO className="select-none" />
           <StarWars width={70} height={30} />
         </div>
-        <div className="flex items-center gap-6">
+        {/* <div className="flex items-center gap-6">
           <PEGI7 className="select-none" />
-        </div>
+        </div> */}
       </section>
       <section className="flex flex-col lg:flex-row justify-between w-3/4 sm:w-2/3">
         <p className="text-white text-sm">{`© ${currentYear} Horizons Games`}</p>
