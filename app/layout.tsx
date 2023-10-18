@@ -47,6 +47,7 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
   creator: 'Horizons Games',
   publisher: 'Horizons Games',
+  manifest: '/manifest.json',
 };
 
 const jsonLd = {
