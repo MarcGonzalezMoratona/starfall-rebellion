@@ -17,6 +17,28 @@ export const metadata: Metadata = {
   },
   description: `LEGO Star Wars: Starfall Rebellion is a two-player hack and slash game that takes place in Coltran,
     a planet oppressed by an Evil Corporation, which is full of poverty and outlawness.`,
+  openGraph: {
+    title: 'LEGO Star Wars: Starfall Rebellion',
+    description: `LEGO Star Wars: Starfall Rebellion is a two-player hack and slash game that takes place in Coltran,
+    a planet oppressed by an Evil Corporation, which is full of poverty and outlawness.`,
+    url: 'https://starfall-rebellion.vercel.app',
+    siteName: 'LEGO Star Wars: Starfall Rebellion',
+    images: [
+      {
+        url: '',
+        width: 1080,
+        height: 1080,
+        alt: 'Starfall Rebellion logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    title: 'LEGO Star Wars: Starfall Rebellion',
+    description: `LEGO Star Wars: Starfall Rebellion is a two-player hack and slash game that takes place in Coltran,
+    a planet oppressed by an Evil Corporation, which is full of poverty and outlawness.`,
+  },
   metadataBase: new URL('https://starfall-rebellion.vercel.app'),
   viewport: 'width=device-width, initial-scale=1',
   creator: 'Horizons Games',
