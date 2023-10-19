@@ -19,7 +19,7 @@ export default function Post({ data }: PostProps) {
   return (
     <Link href={`/news/${data.slug}`}>
       <article
-        className="mx-4 my-4 flex flex-col overflow-hidden rounded-md pt-4 
+        className="mx-4 my-4 flex flex-col overflow-hidden rounded-md pt-4 max-h-[500px]
       shadow-md hover:shadow-lg bg-zinc-950 hover:outline-amber hover:outline transition-all duration-150"
       >
         <div className="relative h-48 w-full sm:h-64">

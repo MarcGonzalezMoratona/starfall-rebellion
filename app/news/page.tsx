@@ -17,7 +17,7 @@ export default function News() {
       <h1 className="mt-8 mb-4 text-2xl sm:text-4xl text-white font-semibold">
         LATEST NEWS
       </h1>
-      <section className="flex flex-col gap-8 sm:grid sm:grid-cols-2 lg:w-2/3">
+      <section className="flex flex-col gap-8 sm:grid sm:grid-cols-3 lg:w-5/6">
         {sortedPosts.map((post) => {
           return (
             <React.Fragment key={post.id}>

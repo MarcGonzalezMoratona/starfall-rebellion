@@ -73,15 +73,8 @@ export default function Home() {
       >
         <h2 className="text-neutral-100 text-4xl font-bold">LATEST NEWS</h2>
         <div className="flex w-full justify-center items-center gap-16">
-          {posts.length > 2 && (
-            <ChevronLeftIcon
-              className="h-12 w-12 cursor-pointer rounded-full my-8
-          bg-amber p-2 text-black hidden lg:block
-          sm:transition-transform sm:duration-300 sm:hover:translate-y-1"
-            />
-          )}
-          <div className="flex flex-col justify-center items-center w-full sm:grid sm:grid-cols-2 xl:w-2/3">
-            {sortedPosts.map((post) => {
+          <div className="flex flex-col justify-center items-center sm:grid xl:grid-cols-3 w-5/6">
+            {sortedPosts.slice(0, 3).map((post) => {
               return (
                 <React.Fragment key={post.id}>
                   <MiniPost data={post} />
@@ -89,13 +82,6 @@ export default function Home() {
               );
             })}
           </div>
-          {posts.length > 2 && (
-            <ChevronRightIcon
-              className="h-12 w-12 cursor-pointer rounded-full my-8
-          bg-amber p-2 text-black hidden lg:block
-          sm:transition-transform sm:duration-300 sm:hover:translate-y-1"
-            />
-          )}
         </div>
       </section>
       {/* <section className="flex justify-center items-center h-96 px-4 w-full bg-royalPurple gap-16">

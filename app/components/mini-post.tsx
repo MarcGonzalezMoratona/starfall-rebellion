@@ -19,7 +19,7 @@ export default function MiniPost({ data }: MiniPostProps) {
   return (
     <Link href={`/news/${data.slug}`}>
       <article
-        className="mx-4 my-4 flex flex-col overflow-hidden rounded-lg pt-4 
+        className="mx-4 my-4 flex flex-col overflow-hidden rounded-lg pt-4 max-h-[500px]
       shadow-md hover:shadow-lg bg-zinc-950 hover:outline-amber hover:outline transition-all duration-150"
       >
         <div className="relative h-48 w-full">
@@ -36,7 +36,7 @@ export default function MiniPost({ data }: MiniPostProps) {
         border-amber pt-4 h-auto"
         >
           <div>
-            <h1 className="my-6 text-xl font-medium text-white">
+            <h1 className="my-6 text-xl font-medium text-white max-w-48">
               {data.title}
             </h1>
             <div className="my-4 text-lg">
