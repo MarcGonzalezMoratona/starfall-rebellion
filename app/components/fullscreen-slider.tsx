@@ -16,6 +16,7 @@ type SliderProps = {
   closeSlider: () => void;
   currentImageIndex: number;
   setCurrentImageIndex: Dispatch<SetStateAction<number>>;
+  sizes: string;
 };
 
 const FullScreenSlider = ({
@@ -24,6 +25,7 @@ const FullScreenSlider = ({
   isSliderOpen,
   closeSlider,
   currentImageIndex,
+  sizes,
 }: SliderProps) => {
   useEffect(() => {
     if (isSliderOpen) document.body.style.overflow = 'hidden';
@@ -52,7 +54,7 @@ const FullScreenSlider = ({
         sm:right-8 sm:transition-transform sm:duration-300 sm:hover:translate-y-1"
             onClick={closeSlider}
           />
-          <div className="relative h-[180px] w-[320px] sm:h-[270px] sm:w-[480px] md:h-[360px] md:w-[640px] lg:h-[540px] lg:w-[960px] xl:h-[720px] xl:w-[1280px]">
+          <div className={`relative ${sizes}`}>
             <Image
               className="select-none"
               src={images[currentImageIndex].url}

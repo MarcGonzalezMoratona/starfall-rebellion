@@ -62,6 +62,7 @@ export default function Media() {
             </span>
           ))}
           <FullScreenSlider
+            sizes="h-[180px] w-[320px] sm:h-[270px] sm:w-[480px] md:h-[360px] md:w-[640px] lg:h-[540px] lg:w-[960px] xl:h-[720px] xl:w-[1280px]"
             images={gameImages}
             isSliderOpen={currentSlider === 0}
             closeSlider={closeSlider}
@@ -147,6 +148,7 @@ export default function Media() {
             </span>
           ))}
           <FullScreenSlider
+            sizes="h-[180px] w-[320px] sm:h-[270px] sm:w-[480px] md:h-[360px] md:w-[640px] lg:h-[540px] lg:w-[960px] xl:h-[720px] xl:w-[1280px]"
             images={conceptArt}
             isSliderOpen={currentSlider === 1}
             closeSlider={closeSlider}

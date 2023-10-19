@@ -4,7 +4,6 @@ import { team } from '../data/team';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { usePageHandler } from '../hooks/usePage';
-import { useDevice } from '../hooks/useDevice';
 import FullScreenSlider from '../components/fullscreen-slider';
 import { conceptArt } from '../data/concept-art';
 import StarfallRebellion from '../components/logos/starfall-rebellion';
@@ -12,10 +11,6 @@ import StarfallRebellion from '../components/logos/starfall-rebellion';
 export default function Press() {
   const [selected, setSelected] = useState('');
   const PageHandler = usePageHandler();
-  const device = useDevice();
-  const isMobile = device === 'mobile';
-  const isTablet = device === 'tablet';
-
   const [isSliderOpen, setIsSliderOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -410,6 +405,7 @@ export default function Press() {
                     </span>
                   ))}
                   <FullScreenSlider
+                    sizes="h-[180px] w-[320px] sm:h-[270px] sm:w-[480px] md:h-[360px] md:w-[640px] lg:h-[540px] lg:w-[960px] xl:h-[720px] xl:w-[1280px]"
                     images={conceptArt}
                     isSliderOpen={isSliderOpen}
                     closeSlider={closeSlider}
