@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import CTA from './components/cta';
 import SocialNetworks from './components/social-networks';
 import socialNetworks from './data/social-networks';
@@ -17,10 +17,25 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import Song from './components/song';
+import FullScreenSlider from './components/fullscreen-slider';
+import { bixImages } from '../app/data/bix-images';
+import { alluraImages } from '../app/data/allura-images';
 
 export default function Home() {
   const PageHandler = usePageHandler();
   const sortedPosts = [...posts].sort((a, b) => b.id - a.id);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentSlider, setCurrentSlider] = useState(-1);
+
+  const openSlider = (index: any, slider: number) => {
+    setCurrentImageIndex(index);
+    setCurrentSlider(slider);
+  };
+
+  const closeSlider = () => {
+    setCurrentSlider(-1);
+  };
+
   useEffect(() => {
     PageHandler('home');
   });
@@ -115,18 +130,29 @@ export default function Home() {
             <h3 className="text-neutral-100 text-4xl font-bold">Bix</h3>
             <p className="text-neutral-100 text-2xl">Main ability: Force</p>
             <p className="text-neutral-100 text-2xl">Combat type: Melee</p>
-            <div className="flex flex-col md:flex-row gap-4 my-4">
-              <Image
-                src="/characters/BixProfile.png"
-                width={300}
-                height={300}
-                alt="Bix profile picture"
-              />
-              <Image
-                src="/characters/BixDescription.png"
-                width={300}
-                height={300}
-                alt="Bix description"
+            <div className="flex flex-col md:flex-row my-4 items-center justify-center gap-4">
+              {bixImages.map((image, index) => (
+                <span key={image.url.split('.')[0]}>
+                  <div className="my-4">
+                    <Image
+                      onClick={() => openSlider(index, 0)}
+                      className="cursor-pointer select-none"
+                      src={image.url}
+                      width={300}
+                      height={300}
+                      alt={image.description}
+                    />
+                  </div>
+                  <p className="text-center">{image.description}</p>
+                </span>
+              ))}
+              <FullScreenSlider
+                sizes="h-[180px] w-[180px] sm:h-[270px] sm:w-[270px] md:h-[360px] md:w-[360px] lg:h-[540px] lg:w-[540px] xl:h-[720px] xl:w-[720px]"
+                images={bixImages}
+                isSliderOpen={currentSlider === 0}
+                closeSlider={closeSlider}
+                currentImageIndex={currentImageIndex}
+                setCurrentImageIndex={setCurrentImageIndex}
               />
             </div>
           </div>
@@ -134,18 +160,29 @@ export default function Home() {
             <h3 className="text-neutral-100 text-4xl font-bold">Allura</h3>
             <p className="text-neutral-100 text-2xl">Main ability: Hacking</p>
             <p className="text-neutral-100 text-2xl">Combat type: Ranged</p>
-            <div className="flex flex-col md:flex-row gap-4 my-4">
-              <Image
-                src="/characters/AlluraProfile.png"
-                width={300}
-                height={300}
-                alt="Allura profile picture"
-              />
-              <Image
-                src="/characters/AlluraDescription.png"
-                width={300}
-                height={300}
-                alt="Allura description"
+            <div className="flex flex-col md:flex-row my-4 items-center justify-center gap-4">
+              {alluraImages.map((image, index) => (
+                <span key={image.url.split('.')[0]}>
+                  <div className="my-4">
+                    <Image
+                      onClick={() => openSlider(index, 1)}
+                      className="cursor-pointer select-none"
+                      src={image.url}
+                      width={300}
+                      height={300}
+                      alt={image.description}
+                    />
+                  </div>
+                  <p className="text-center">{image.description}</p>
+                </span>
+              ))}
+              <FullScreenSlider
+                sizes="h-[180px] w-[180px] sm:h-[270px] sm:w-[270px] md:h-[360px] md:w-[360px] lg:h-[540px] lg:w-[540px] xl:h-[720px] xl:w-[720px]"
+                images={alluraImages}
+                isSliderOpen={currentSlider === 1}
+                closeSlider={closeSlider}
+                currentImageIndex={currentImageIndex}
+                setCurrentImageIndex={setCurrentImageIndex}
               />
             </div>
           </div>
