@@ -47,6 +47,7 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
   creator: 'Horizons Games',
   publisher: 'Horizons Games',
+  icons: 'https://starfall-rebellion.vercel.app/favicon.ico',
   manifest: '/manifest.json',
 };
 

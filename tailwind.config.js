@@ -16,8 +16,6 @@ module.exports = {
       },
       fontFamily: {
         ethnocentric: ['Ethnocentric', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
