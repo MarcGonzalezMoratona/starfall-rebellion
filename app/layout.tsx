@@ -1,5 +1,5 @@
 import './globals.css';
-import { Orbitron } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import Header from './header';
 import Footer from './footer';
 import { MenuContextProvider } from './store/menu-context';
@@ -8,7 +8,7 @@ import { PageContextProvider } from './store/page-context';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 
-const orbitron = Orbitron({ subsets: ['latin'] });
+const roboto = Roboto({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
   title: {
@@ -108,7 +108,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${orbitron.className} min-h-screen flex flex-col items-center justify-between`}
+        className={`${roboto.className} min-h-screen flex flex-col items-center justify-between`}
       >
         <DeviceContextProvider>
           <PageContextProvider>
