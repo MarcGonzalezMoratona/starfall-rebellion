@@ -1,5 +1,5 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Orbitron } from 'next/font/google';
 import Header from './header';
 import Footer from './footer';
 import { MenuContextProvider } from './store/menu-context';
@@ -8,7 +8,7 @@ import { PageContextProvider } from './store/page-context';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 
-const inter = Inter({ subsets: ['latin'] });
+const orbitron = Orbitron({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
@@ -108,7 +108,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} min-h-screen flex flex-col items-center justify-between`}
+        className={`${orbitron.className} min-h-screen flex flex-col items-center justify-between`}
       >
         <DeviceContextProvider>
           <PageContextProvider>
