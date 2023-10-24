@@ -1,4 +1,4 @@
-# Star Wars: Starfall Rebellion Website
+# LEGO Star Wars: Starfall Rebellion Website
 
 ## Getting Started
 
