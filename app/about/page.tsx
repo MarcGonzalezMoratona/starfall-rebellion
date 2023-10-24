@@ -57,7 +57,7 @@ export default function About() {
           <div className="flex justify-center xl:flex-1 xl:relative mx-4 flex-col items-center xl:items-stretch xl:flex-row">
             <Image
               src="/horizons-team.jpg"
-              alt=""
+              alt="A picture of the team behind Horizons Games."
               width={600}
               height={350}
               className="xl:absolute xl:top-0 xl:bottom-0 xl:my-auto rounded-xl select-none"

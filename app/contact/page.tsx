@@ -18,10 +18,11 @@ export default function Contact() {
       <section className="flex flex-col xl:flex-row h-screen items-center justify-center gap-4 bg-zinc-900 w-full">
         <Image
           src="/characters.png"
-          alt=""
+          alt="Bix, Starfall Rebellion's main character, and an enemy drone."
           width={750}
           height={500}
           className="select-none"
+          loading="eager"
         />
         <div className="flex flex-col gap-4">
           <Link

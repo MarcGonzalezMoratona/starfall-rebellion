@@ -5,7 +5,7 @@ export default function StarWars({ width, height }: ImageProps) {
   return (
     <Image
       src="/star-wars.png"
-      alt=""
+      alt="Star Wars logo."
       width={width}
       height={height}
       className="select-none"

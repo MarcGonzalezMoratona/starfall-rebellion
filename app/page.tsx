@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <main className="bg-zinc-900 w-full flex flex-col items-center justify-center scroll-smooth">
       <section className="flex flex-col justify-center gap-6 items-center h-screen">
-        <StarfallRebellion width={800} height={800} />
+        <StarfallRebellion width={800} height={800} loading="eager" />
         {/* <h1 className="text-white text-3xl sm:text-7xl font-semibold">
           LEGO STAR WARS:
         </h1>
