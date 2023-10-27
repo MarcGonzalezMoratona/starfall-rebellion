@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faTwitter,
+  faXTwitter,
   faYoutube,
   faTiktok,
   faInstagram,
@@ -40,7 +40,7 @@ const SocialNetworks = ({
           aria-label="Take a look at our X account"
         >
           <FontAwesomeIcon
-            icon={faTwitter}
+            icon={faXTwitter}
             className={`text-white hover:text-amber ${
               size === 'sm' && 'w-6 h-6'
             } ${size === 'md' && 'w-8 h-8'} ${size === 'lg' && 'w-12 h-12'}`}
