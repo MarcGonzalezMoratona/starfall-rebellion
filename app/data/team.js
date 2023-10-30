@@ -17,6 +17,8 @@ export const team = {
       secondaryRole: '2D Artist',
       networks: {
         github: 'https://github.com/csandra24',
+        linkedin: 'https://www.linkedin.com/in/sandracampa%C3%B1a',
+        website: 'https://sandracampanag.com',
       },
     },
     {
@@ -47,6 +49,7 @@ export const team = {
       networks: {
         github: 'https://github.com/ericdacal',
         linkedin: 'https://www.linkedin.com/in/erdasa',
+        website: 'https://eric-dacal.vercel.app',
       },
     },
     {
@@ -90,7 +93,7 @@ export const team = {
       networks: {
         github: 'https://github.com/AuxPort66',
         linkedin: 'https://www.linkedin.com/in/sara-izquierdo-elfau-285109222',
-        website: 'https://auxport66.itch.io/',
+        website: 'https://auxport66.itch.io',
       },
     },
     {
@@ -127,6 +130,7 @@ export const team = {
       secondaryRole: 'Level Designer',
       networks: {
         github: 'https://github.com/Vlukkee',
+        linkedin: 'https://www.linkedin.com/in/alejandro-matus-ovejero',
       },
     },
     {
@@ -167,6 +171,7 @@ export const team = {
         github: 'https://github.com/MacXxs',
         linkedin:
           'https://www.linkedin.com/in/miquel-prieto-molin%C3%A9-a57a30ab',
+        website: 'https://macxxs.github.io',
       },
     },
     {
@@ -186,6 +191,7 @@ export const team = {
       networks: {
         github: 'https://github.com/totisama',
         linkedin: 'https://www.linkedin.com/in/rodrigo-samayoa-526916196',
+        website: 'https://totisama.carrd.co',
       },
     },
     {
@@ -195,6 +201,7 @@ export const team = {
       networks: {
         github: 'https://github.com/OriolSors',
         linkedin: 'https://www.linkedin.com/in/oriol-sors-vidal-4361491b9',
+        website: 'https://oriolsors.carrd.co',
       },
     },
   ],
