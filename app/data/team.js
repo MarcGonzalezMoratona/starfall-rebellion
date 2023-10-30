@@ -96,7 +96,7 @@ export const team = {
       },
     },
     {
-      name: 'Xavier Llubés',
+      name: 'Xavier Llubes',
       image: 'XavierLlubes.jpg',
       primaryRole: 'Physics Programmer',
       networks: {
