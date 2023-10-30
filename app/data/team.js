@@ -70,8 +70,7 @@ export const team = {
       networks: {
         github: 'https://github.com/Piterga12',
         linkedin: 'https://www.linkedin.com/in/pedro-gatf',
-        website:
-          'https://portfolio-pedro-gonzalez-anta-torrents-faura.vercel.app',
+        website: 'https://pedro-gonzalez-anta.vercel.app',
       },
     },
     {
