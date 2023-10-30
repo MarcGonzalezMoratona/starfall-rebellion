@@ -44,7 +44,7 @@ export default async function News({ params }: { params: { slug: string } }) {
     <main className="min-h-screen bg-zinc-900 w-full flex flex-col gap-8 items-center justify-center">
       {/* <FullPost data={posts} /> */}
       <div
-        className="markdown"
+        className="markdown w-5/6 md:w-2/3"
         dangerouslySetInnerHTML={{ __html: postContent }}
       />
     </main>
