@@ -7,4 +7,8 @@ export const wallpapers = [
     url: '/wallpapers/alluraWallpaper',
     description: 'Allura - The second character',
   },
+  {
+    url: '/wallpapers/topManWallpaper',
+    description: 'TopMan - The boss of the Evil Corporation',
+  },
 ];
