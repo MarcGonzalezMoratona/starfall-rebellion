@@ -1,10 +1,10 @@
 export const bixImages = [
   {
-    url: '/characters/BixProfile.png',
+    url: '/characters/bixProfile.png',
     description: 'Bix profile picture',
   },
   {
-    url: '/characters/BixDescription.png',
+    url: '/characters/bixDescription.png',
     description: 'Bix description',
   },
 ];

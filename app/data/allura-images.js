@@ -1,10 +1,10 @@
 export const alluraImages = [
   {
-    url: '/characters/AlluraProfile.png',
+    url: '/characters/alluraProfile.png',
     description: 'Allura profile picture',
   },
   {
-    url: '/characters/AlluraDescription.png',
+    url: '/characters/alluraDescription.png',
     description: 'Allura description',
   },
 ];

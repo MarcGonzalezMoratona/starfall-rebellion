@@ -1,10 +1,10 @@
 export const conceptArt = [
   {
-    url: '/art/Bix.png',
+    url: '/art/bix.png',
     description: 'Bix',
   },
   {
-    url: '/art/BixRobotic.png',
+    url: '/art/bixRobotic.png',
     description: 'Bix with robotic arm version',
   },
   {
@@ -12,11 +12,11 @@ export const conceptArt = [
     description: 'A crystal cave',
   },
   {
-    url: '/art/Allura.png',
+    url: '/art/allura.png',
     description: 'Allura',
   },
   {
-    url: '/art/AlluraRobotic.png',
+    url: '/art/alluraRobotic.png',
     description: 'Allura with robotic arm version',
   },
   {
@@ -24,15 +24,15 @@ export const conceptArt = [
     description: 'The final boss dome',
   },
   {
-    url: '/art/TopManMetal.png',
+    url: '/art/topManMetal.png',
     description: 'Final boss metallic version',
   },
   {
-    url: '/art/TopManRobotic.png',
+    url: '/art/topManRobotic.png',
     description: 'Final boss with robotic arm version',
   },
   {
-    url: '/art/TopManFighter.png',
+    url: '/art/topManFighter.png',
     description: 'Final boss fighter version',
   },
 ];
