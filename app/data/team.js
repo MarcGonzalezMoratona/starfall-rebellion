@@ -13,7 +13,7 @@ export const team = {
     {
       name: 'Sandra Campaña',
       image: 'SandraCampaña.jpg',
-      primaryRole: 'Gameplay Programmer',
+      primaryRole: 'Designer',
       secondaryRole: '2D Artist',
       networks: {
         github: 'https://github.com/csandra24',
@@ -56,7 +56,7 @@ export const team = {
       name: 'Alexis Dieu',
       image: 'AlexisDieu.jpg',
       primaryRole: 'Graphics Programmer',
-      secondaryRole: 'Physics Programmer',
+      secondaryRole: 'Engine Programmer',
       networks: {
         github: 'https://github.com/AlexisDieu',
         linkedin: 'https://www.linkedin.com/in/alexis-dieu-705ab81a3',
@@ -166,6 +166,7 @@ export const team = {
       name: 'Miquel Prieto',
       image: 'MiquelPrieto.jpg',
       primaryRole: 'Lead Graphics Programmer',
+      secondaryRole: 'Engine Programmer',
       networks: {
         github: 'https://github.com/MacXxs',
         linkedin:
@@ -186,7 +187,7 @@ export const team = {
     {
       name: 'Rodrigo Samayoa',
       image: 'RodrigoSamayoa.jpg',
-      primaryRole: 'Physics Programmer',
+      primaryRole: 'Engine Programmer',
       networks: {
         github: 'https://github.com/totisama',
         linkedin: 'https://www.linkedin.com/in/rodrigo-samayoa-526916196',

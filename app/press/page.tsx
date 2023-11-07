@@ -6,21 +6,23 @@ import Image from 'next/image';
 import { usePageHandler } from '../hooks/usePage';
 import FullScreenSlider from '../components/fullscreen-slider';
 import { conceptArt } from '../data/concept-art';
+import { gameImages } from '../data/game';
 import StarfallRebellion from '../components/logos/starfall-rebellion';
+import { collaborators } from '../data/collaborators';
 
 export default function Press() {
   const [selected, setSelected] = useState('');
   const PageHandler = usePageHandler();
-  const [isSliderOpen, setIsSliderOpen] = useState(false);
+  const [currentSlider, setCurrentSlider] = useState(-1);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const openSlider = (index: any) => {
+  const openSlider = (index: any, slider: number) => {
     setCurrentImageIndex(index);
-    setIsSliderOpen(true);
+    setCurrentSlider(slider);
   };
 
   const closeSlider = () => {
-    setIsSliderOpen(false);
+    setCurrentSlider(-1);
   };
 
   useEffect(() => {
@@ -378,12 +380,15 @@ export default function Press() {
                 >
                   IMAGES:
                 </h2>
+                <h3 className="text-lg font-medium sm:text-xl scroll-mt-12 mt-4">
+                  CONCEPT ART
+                </h3>
                 <div className="my-8 mx-8 flex flex-col items-center justify-center gap-4 sm:grid sm:grid-cols-2 md:w-2/3 xl:grid-cols-3">
                   {conceptArt.map((image, index) => (
                     <span key={image.url.split('.')[0]}>
                       <div className="my-4">
                         <Image
-                          onClick={() => openSlider(index)}
+                          onClick={() => openSlider(index, 0)}
                           className="cursor-pointer select-none"
                           src={image.url}
                           width={1920}
@@ -397,7 +402,35 @@ export default function Press() {
                   <FullScreenSlider
                     sizes="h-[180px] w-[320px] sm:h-[270px] sm:w-[480px] md:h-[360px] md:w-[640px] lg:h-[540px] lg:w-[960px] xl:h-[720px] xl:w-[1280px]"
                     images={conceptArt}
-                    isSliderOpen={isSliderOpen}
+                    isSliderOpen={currentSlider === 0}
+                    closeSlider={closeSlider}
+                    currentImageIndex={currentImageIndex}
+                    setCurrentImageIndex={setCurrentImageIndex}
+                  />
+                </div>
+                <h3 className="text-lg font-medium sm:text-xl scroll-mt-12 mt-4">
+                  GAME IMAGES
+                </h3>
+                <div className="my-8 mx-8 flex flex-col items-center justify-center gap-4 sm:grid sm:grid-cols-2 md:w-2/3 xl:grid-cols-3">
+                  {gameImages.map((image, index) => (
+                    <span key={image.url.split('.')[0]}>
+                      <div className="my-4">
+                        <Image
+                          onClick={() => openSlider(index, 1)}
+                          className="cursor-pointer select-none"
+                          src={image.url}
+                          width={1920}
+                          height={1080}
+                          alt={image.description}
+                        />
+                      </div>
+                      <p className="text-center">{image.description}</p>
+                    </span>
+                  ))}
+                  <FullScreenSlider
+                    sizes="h-[180px] w-[320px] sm:h-[270px] sm:w-[480px] md:h-[360px] md:w-[640px] lg:h-[540px] lg:w-[960px] xl:h-[720px] xl:w-[1280px]"
+                    images={gameImages}
+                    isSliderOpen={currentSlider === 1}
                     closeSlider={closeSlider}
                     currentImageIndex={currentImageIndex}
                     setCurrentImageIndex={setCurrentImageIndex}
@@ -447,6 +480,17 @@ export default function Press() {
                 </h2>
                 <ul className="flex flex-col sm:grid sm:grid-cols-3">
                   {team.partners.map((partner, index) => {
+                    return (
+                      <li className="my-2" key={index}>
+                        <p className="font-semibold">{partner.name}</p>
+                        <p>{partner.primaryRole}</p>
+                        {partner.secondaryRole && (
+                          <p>{partner.secondaryRole}</p>
+                        )}
+                      </li>
+                    );
+                  })}
+                  {collaborators.partners.map((partner, index) => {
                     return (
                       <li className="my-2" key={index}>
                         <p className="font-semibold">{partner.name}</p>
