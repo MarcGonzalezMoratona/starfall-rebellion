@@ -57,7 +57,7 @@ export default function Home() {
           label="DOWNLOAD"
           href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.7.0/Starfall.Rebellion.0.7.0.zip"
           className="hidden sm:block"
-          size="lg"
+          size="xl"
         />
         <Link href="#latest-news">
           <Image
@@ -70,10 +70,10 @@ export default function Home() {
         </Link>
       </section>
       <section
-        className="w-full flex flex-col justify-center items-center gap-8 py-8 bg-royalPurple"
+        className="w-full flex flex-col justify-center items-center py-8"
         id="latest-news"
       >
-        <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold">
+        <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
           LATEST NEWS
         </h2>
         <div className="flex w-full justify-center items-center gap-16">
@@ -113,7 +113,7 @@ export default function Home() {
           </ul>
         </div>
       </section> */}
-      <section className="flex flex-col justify-center items-center w-full bg-darkPurple py-8">
+      <section className="flex flex-col justify-center items-center w-full py-8">
         <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
           CHARACTERS
         </h2>
@@ -208,7 +208,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center px-4 py-8 w-full bg-royalPurple">
+      <section className="flex flex-col justify-center items-center px-4 py-8 w-full">
         <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
           MUSIC
         </h2>
