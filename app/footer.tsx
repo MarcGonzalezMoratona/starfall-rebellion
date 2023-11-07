@@ -36,7 +36,9 @@ export default function Footer() {
       </section>
       <section className="flex flex-col lg:flex-row justify-between w-3/4 sm:w-2/3">
         <p className="text-white text-sm">{`© ${currentYear} Horizons Games`}</p>
-        <p className="text-white text-sm">{`Designed and developed by Marc González Moratona`}</p>
+        <p className="text-white text-sm">
+          Designed and developed by Marc González Moratona
+        </p>
       </section>
     </footer>
   );
