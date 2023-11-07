@@ -73,7 +73,9 @@ export default function Home() {
         className="w-full flex flex-col justify-center items-center gap-8 py-8 bg-royalPurple"
         id="latest-news"
       >
-        <h2 className="text-neutral-100 text-4xl font-bold">LATEST NEWS</h2>
+        <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold">
+          LATEST NEWS
+        </h2>
         <div className="flex w-full justify-center items-center gap-16">
           <div className="flex flex-col justify-center items-center sm:grid xl:grid-cols-3 w-5/6">
             {sortedPosts.slice(0, 3).map((post) => {
@@ -112,10 +114,14 @@ export default function Home() {
         </div>
       </section> */}
       <section className="flex flex-col justify-center items-center w-full bg-darkPurple py-8">
-        <h2 className="text-neutral-100 text-4xl font-bold my-8">CHARACTERS</h2>
+        <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
+          CHARACTERS
+        </h2>
         <div className="grid xl:grid-cols-2 w-full">
           <div className="flex flex-col items-center gap-4">
-            <h3 className="text-neutral-100 text-4xl font-bold">Bix</h3>
+            <h3 className="text-neutral-100 text-3xl sm:text-4xl font-semibold">
+              Bix
+            </h3>
             <p className="text-neutral-100 text-2xl">Main ability: Force</p>
             <p className="text-neutral-100 text-2xl">Combat type: Melee</p>
             <div className="flex flex-col md:flex-row my-4 items-center justify-center gap-4">
@@ -145,7 +151,9 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center gap-4">
-            <h3 className="text-neutral-100 text-4xl font-bold">Allura</h3>
+            <h3 className="text-neutral-100 text-3xl sm:text-4xl font-semibold">
+              Allura
+            </h3>
             <p className="text-neutral-100 text-2xl">Main ability: Hacking</p>
             <p className="text-neutral-100 text-2xl">Combat type: Ranged</p>
             <div className="flex flex-col md:flex-row my-4 items-center justify-center gap-4">
@@ -176,9 +184,35 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="w-full flex flex-col justify-center items-center xl:gap-8 py-8 bg-[#0A343C]">
+        <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
+          HAND OF DOMINION
+        </h2>
+        <div className="flex flex-col xl:flex-row justify-around items-center w-5/6 xl:w-2/3 py-4 xl:py-16">
+          <div className="text-neutral-100 text-lg sm:text-2xl font-medium">
+            <p className="xl:w-2/3 mb-4">
+              {`Hand of dominion is a massive fortress led by TopMan, the Evil Corporation's leader,
+               that looms ominously over Coltran landscape.`}
+            </p>
+            <p className="xl:w-2/3 mt-4 mb-8">
+              {`It is guarded by the Venomites, the Corporation's soldiers, 
+               responsible for protecting its assets and enforcing its interests throughout the galaxy.`}
+            </p>
+          </div>
+          <Image
+            src="/hand-of-dominion.png"
+            alt="Hand of dominion logo"
+            height={300}
+            width={300}
+            className="animate-pulse"
+          />
+        </div>
+      </section>
       <section className="flex flex-col justify-center items-center px-4 py-8 w-full bg-royalPurple">
-        <h2 className="text-neutral-100 text-4xl font-bold my-8">MUSIC</h2>
-        <p className="text-white text-lg">
+        <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
+          MUSIC
+        </h2>
+        <p className="text-white text-lg font-medium">
           Our team is collaborating with Escola Superior de Música de Catalunya
           - ESMUC, that composed Starfall Rebellion OST
         </p>
