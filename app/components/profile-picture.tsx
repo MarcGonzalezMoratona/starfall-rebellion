@@ -20,7 +20,7 @@ const ProfilePicture = ({ partner, index, folder }: ProfilePictureProps) => {
       <div className="relative h-36 w-36 sm:h-48 sm:w-48 md:h-60 md:w-60">
         <Image
           src={`/${folder}/${partner.image}`}
-          alt={partner.name}
+          alt={`${partner.name} close-up picture`}
           width={240}
           height={240}
           className={
