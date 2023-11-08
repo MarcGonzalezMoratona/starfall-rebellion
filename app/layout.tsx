@@ -41,9 +41,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   metadataBase: new URL('https://starfall-rebellion.vercel.app'),
-  alternates: {
-    canonical: '/',
-  },
   viewport: 'width=device-width, initial-scale=1',
   creator: 'Horizons Games',
   publisher: 'Horizons Games',
