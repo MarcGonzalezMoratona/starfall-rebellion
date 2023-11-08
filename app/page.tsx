@@ -44,12 +44,6 @@ export default function Home() {
     <main className="bg-zinc-900 w-full flex flex-col items-center justify-center scroll-smooth">
       <section className="flex flex-col justify-center gap-6 items-center h-screen">
         <StarfallRebellion width={800} height={800} loading="eager" />
-        {/* <h1 className="text-white text-3xl sm:text-7xl font-semibold">
-          LEGO STAR WARS:
-        </h1>
-        <h2 className="text-white text-2xl sm:text-5xl font-semibold">
-          STARFALL REBELLION
-        </h2> */}
         <p className="text-white sm:text-2xl">
           ACTION-ADVENTURE · FREE TO PLAY
         </p>
@@ -62,13 +56,43 @@ export default function Home() {
         <Link href="#latest-news">
           <Image
             src="/arrow.png"
-            width={96}
-            height={54}
+            width={120}
+            height={68}
             alt="Arrow down to the next section"
             className="animate-pulse"
           />
         </Link>
       </section>
+      <div
+        className="flex w-5/6 h-8 bg-no-repeat bg-center bg-[length:315px_14px] sm:bg-[length:1062px_27px]
+      bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAAbBAMAAAADj99nAAAAG1BMVEUP9fUP+fkR+fkO+/lHcEwM/PwP+PcR+vkR+filiOImAAAACHRSTlMKGyVAABIuunN9bjEAAAIASURBVGje7VmxjtswDH0DCXSlAH+ADdQ/UOBmDuxOF2DROYfmGzp2KdrPvkGWz9fcGQcnaVggb3BigRKfnijbImF37AXuEty1y6od7Rxcbzy5S/mnTe0UGyDshOIcLArgNv635r/STi/l5pLQutz7l+56IHrWrtJzwFcGzLUNzgB43ZfrxZdWbz25/meA6wBYLE7xYkw4/2WlZmaqr9j+E/8b86/ioYYdcySDO0BmBqSjFjFTMzMlRMgVMJ3TORxqBuWYbuJ/mxpojjtw9VJk9VNEpBcp0rcuRaQ0m1WbSLVc38orpiKlrFrL2rCc+pcAQGCW2/g/nb+I9PWuq+tqZooQKUMuiHRMBGBKR20QCaBqB/7wJyF+O4DP/CMjt18t7oBvObVzVURK7X56i7sIGcZjLgy9OAAOKUMyaodh2bOqPCXVjgghZcynXRfUnndZtdOUcTcO0s17VhFfj5/y4eCAIsbHfNSO37k97/DlmI7gw8PBoQCP+db18fixvWeJ833f9SIdAFWfRIZ03Hx5z8KvdXo5A507EYEjHzUJb2cyVXhM+aQDzAhXOmufwUzCnWjJo8Az5lFmaum48XMeZcmRZUww2hu5t5uBmefU4pw3TigezUn3vCntVq9IR5BaoUazcaO6Y1/UyfS9tSV6Z21K24XeHkL/Y//3+ux+PAGpfrq6uTAleAAAAABJRU5ErkJggg==)]"
+      />
+      <section
+        className="w-full flex flex-col justify-center items-center py-8"
+        id="latest-news"
+      >
+        <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
+          ABOUT THE GAME
+        </h2>
+        <div className="flex w-full justify-center items-center">
+          <div className="flex flex-col w-5/6 xl:w-1/2 py-4 xl:py-8 gap-8">
+            <p className="text-neutral-100 text-lg sm:text-2xl text-center sm:text-left">
+              {`Starfall Rebellion is an action-adventure game, set in the Star Wars universe, inspired by the Lego Star Wars games.
+            Players can control two characters with unique abilities, 
+            navigating two immersive levels with Star Wars-inspired challenges.`}
+            </p>
+            <p className="text-neutral-100 text-lg sm:text-2xl text-center sm:text-left">
+              {`The grand finale features a formidable final boss with three challenging phases.
+            Join Bix, a force-sensitive pirate, as she turns against a sinister galactic organization which she used to work for.
+            Her quest for change leads to an unlikely alliance with Allura, a dedicated rebel.`}
+            </p>
+          </div>
+        </div>
+      </section>
+      <div
+        className="flex w-5/6 h-8 bg-no-repeat bg-center bg-[length:315px_14px] sm:bg-[length:1062px_27px]
+      bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAAbBAMAAAADj99nAAAAG1BMVEUP9fUP+fkR+fkO+/lHcEwM/PwP+PcR+vkR+filiOImAAAACHRSTlMKGyVAABIuunN9bjEAAAIASURBVGje7VmxjtswDH0DCXSlAH+ADdQ/UOBmDuxOF2DROYfmGzp2KdrPvkGWz9fcGQcnaVggb3BigRKfnijbImF37AXuEty1y6od7Rxcbzy5S/mnTe0UGyDshOIcLArgNv635r/STi/l5pLQutz7l+56IHrWrtJzwFcGzLUNzgB43ZfrxZdWbz25/meA6wBYLE7xYkw4/2WlZmaqr9j+E/8b86/ioYYdcySDO0BmBqSjFjFTMzMlRMgVMJ3TORxqBuWYbuJ/mxpojjtw9VJk9VNEpBcp0rcuRaQ0m1WbSLVc38orpiKlrFrL2rCc+pcAQGCW2/g/nb+I9PWuq+tqZooQKUMuiHRMBGBKR20QCaBqB/7wJyF+O4DP/CMjt18t7oBvObVzVURK7X56i7sIGcZjLgy9OAAOKUMyaodh2bOqPCXVjgghZcynXRfUnndZtdOUcTcO0s17VhFfj5/y4eCAIsbHfNSO37k97/DlmI7gw8PBoQCP+db18fixvWeJ833f9SIdAFWfRIZ03Hx5z8KvdXo5A507EYEjHzUJb2cyVXhM+aQDzAhXOmufwUzCnWjJo8Az5lFmaum48XMeZcmRZUww2hu5t5uBmefU4pw3TigezUn3vCntVq9IR5BaoUazcaO6Y1/UyfS9tSV6Z21K24XeHkL/Y//3+ux+PAGpfrq6uTAleAAAAABJRU5ErkJggg==)]"
+      />
       <section
         className="w-full flex flex-col justify-center items-center py-8"
         id="latest-news"
@@ -113,6 +137,10 @@ export default function Home() {
           </ul>
         </div>
       </section> */}
+      <div
+        className="flex w-full h-8 bg-no-repeat bg-center bg-[length:315px_14px] sm:bg-[length:1062px_27px]
+      bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAAbBAMAAAADj99nAAAAG1BMVEUP9fUP+fkR+fkO+/lHcEwM/PwP+PcR+vkR+filiOImAAAACHRSTlMKGyVAABIuunN9bjEAAAIASURBVGje7VmxjtswDH0DCXSlAH+ADdQ/UOBmDuxOF2DROYfmGzp2KdrPvkGWz9fcGQcnaVggb3BigRKfnijbImF37AXuEty1y6od7Rxcbzy5S/mnTe0UGyDshOIcLArgNv635r/STi/l5pLQutz7l+56IHrWrtJzwFcGzLUNzgB43ZfrxZdWbz25/meA6wBYLE7xYkw4/2WlZmaqr9j+E/8b86/ioYYdcySDO0BmBqSjFjFTMzMlRMgVMJ3TORxqBuWYbuJ/mxpojjtw9VJk9VNEpBcp0rcuRaQ0m1WbSLVc38orpiKlrFrL2rCc+pcAQGCW2/g/nb+I9PWuq+tqZooQKUMuiHRMBGBKR20QCaBqB/7wJyF+O4DP/CMjt18t7oBvObVzVURK7X56i7sIGcZjLgy9OAAOKUMyaodh2bOqPCXVjgghZcynXRfUnndZtdOUcTcO0s17VhFfj5/y4eCAIsbHfNSO37k97/DlmI7gw8PBoQCP+db18fixvWeJ833f9SIdAFWfRIZ03Hx5z8KvdXo5A507EYEjHzUJb2cyVXhM+aQDzAhXOmufwUzCnWjJo8Az5lFmaum48XMeZcmRZUww2hu5t5uBmefU4pw3TigezUn3vCntVq9IR5BaoUazcaO6Y1/UyfS9tSV6Z21K24XeHkL/Y//3+ux+PAGpfrq6uTAleAAAAABJRU5ErkJggg==)]"
+      />
       <section className="flex flex-col justify-center items-center w-full py-8">
         <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
           CHARACTERS
@@ -137,7 +165,7 @@ export default function Home() {
                       alt={image.description}
                     />
                   </div>
-                  <p className="text-center">{image.description}</p>
+                  <p className="text-center text-white">{image.description}</p>
                 </span>
               ))}
               <FullScreenSlider
@@ -169,7 +197,7 @@ export default function Home() {
                       alt={image.description}
                     />
                   </div>
-                  <p className="text-center">{image.description}</p>
+                  <p className="text-center text-white">{image.description}</p>
                 </span>
               ))}
               <FullScreenSlider
@@ -190,11 +218,11 @@ export default function Home() {
         </h2>
         <div className="flex flex-col xl:flex-row justify-around items-center w-5/6 xl:w-2/3 py-4 xl:py-16">
           <div className="text-neutral-100 text-lg sm:text-2xl font-medium">
-            <p className="xl:w-2/3 mb-4">
+            <p className="xl:w-2/3 mb-4 text-center sm:text-left">
               {`Hand of dominion is a massive fortress led by TopMan, the Evil Corporation's leader,
                that looms ominously over Coltran landscape.`}
             </p>
-            <p className="xl:w-2/3 mt-4 mb-8">
+            <p className="xl:w-2/3 mt-4 mb-8 text-center sm:text-left">
               {`It is guarded by the Venomites, the Corporation's soldiers, 
                responsible for protecting its assets and enforcing its interests throughout the galaxy.`}
             </p>
@@ -212,7 +240,7 @@ export default function Home() {
         <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
           MUSIC
         </h2>
-        <p className="text-white text-lg font-medium">
+        <p className="text-white text-lg sm:text-2xl font-medium text-center sm:text-left">
           Our team is collaborating with Escola Superior de Música de Catalunya
           - ESMUC, that composed Starfall Rebellion OST
         </p>
@@ -226,6 +254,10 @@ export default function Home() {
           })}
         </div>
       </section>
+      <div
+        className="flex w-full h-8 bg-no-repeat bg-center bg-[length:315px_14px] sm:bg-[length:1062px_27px]
+      bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAAbBAMAAAADj99nAAAAG1BMVEUP9fUP+fkR+fkO+/lHcEwM/PwP+PcR+vkR+filiOImAAAACHRSTlMKGyVAABIuunN9bjEAAAIASURBVGje7VmxjtswDH0DCXSlAH+ADdQ/UOBmDuxOF2DROYfmGzp2KdrPvkGWz9fcGQcnaVggb3BigRKfnijbImF37AXuEty1y6od7Rxcbzy5S/mnTe0UGyDshOIcLArgNv635r/STi/l5pLQutz7l+56IHrWrtJzwFcGzLUNzgB43ZfrxZdWbz25/meA6wBYLE7xYkw4/2WlZmaqr9j+E/8b86/ioYYdcySDO0BmBqSjFjFTMzMlRMgVMJ3TORxqBuWYbuJ/mxpojjtw9VJk9VNEpBcp0rcuRaQ0m1WbSLVc38orpiKlrFrL2rCc+pcAQGCW2/g/nb+I9PWuq+tqZooQKUMuiHRMBGBKR20QCaBqB/7wJyF+O4DP/CMjt18t7oBvObVzVURK7X56i7sIGcZjLgy9OAAOKUMyaodh2bOqPCXVjgghZcynXRfUnndZtdOUcTcO0s17VhFfj5/y4eCAIsbHfNSO37k97/DlmI7gw8PBoQCP+db18fixvWeJ833f9SIdAFWfRIZ03Hx5z8KvdXo5A507EYEjHzUJb2cyVXhM+aQDzAhXOmufwUzCnWjJo8Az5lFmaum48XMeZcmRZUww2hu5t5uBmefU4pw3TigezUn3vCntVq9IR5BaoUazcaO6Y1/UyfS9tSV6Z21K24XeHkL/Y//3+ux+PAGpfrq6uTAleAAAAABJRU5ErkJggg==)]"
+      />
       <section className="flex justify-center items-center h-96 sm:w-2/3 xl:w-1/3 px-4 w-full">
         <NewsLetterSignUpForm />
       </section>

@@ -45,8 +45,12 @@ export default function NewsLetterSignUpForm() {
               htmlFor="email-input"
               className="text-white text-lg flex flex-col gap-2"
             >
-              <h2 className="text-2xl text-white font-bold">STAY CONNECTED!</h2>
-              <p>Sign up to the Starfall Rebellion newsletter.</p>
+              <h2 className="text-2xl text-white font-bold text-center sm:text-left">
+                STAY CONNECTED!
+              </h2>
+              <p className="text-center sm:text-left">
+                Sign up to the Starfall Rebellion newsletter.
+              </p>
             </label>
             <input
               className="rounded-md px-4 py-2 text-zinc-900"
