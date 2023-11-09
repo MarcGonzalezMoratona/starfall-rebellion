@@ -147,8 +147,8 @@ export default function Home() {
             <h3 className="text-neutral-100 text-3xl sm:text-4xl font-semibold">
               Bix
             </h3>
-            <p className="text-neutral-100 text-2xl">Main ability: Force</p>
-            <p className="text-neutral-100 text-2xl">Combat type: Melee</p>
+            <p className="text-neutral-100 text-xl">Main ability: Force</p>
+            <p className="text-neutral-100 text-xl">Combat type: Melee</p>
             <div className="flex flex-col md:flex-row my-4 items-center justify-center gap-4">
               {bixImages.map((image, index) => (
                 <span key={image.url.split('.')[0]}>
@@ -162,7 +162,6 @@ export default function Home() {
                       alt={image.description}
                     />
                   </div>
-                  <p className="text-center text-white">{image.description}</p>
                 </span>
               ))}
               <FullScreenSlider
@@ -179,8 +178,8 @@ export default function Home() {
             <h3 className="text-neutral-100 text-3xl sm:text-4xl font-semibold">
               Allura
             </h3>
-            <p className="text-neutral-100 text-2xl">Main ability: Hacking</p>
-            <p className="text-neutral-100 text-2xl">Combat type: Ranged</p>
+            <p className="text-neutral-100 text-xl">Main ability: Hacking</p>
+            <p className="text-neutral-100 text-xl">Combat type: Ranged</p>
             <div className="flex flex-col md:flex-row my-4 items-center justify-center gap-4">
               {alluraImages.map((image, index) => (
                 <span key={image.url.split('.')[0]}>
@@ -194,7 +193,6 @@ export default function Home() {
                       alt={image.description}
                     />
                   </div>
-                  <p className="text-center text-white">{image.description}</p>
                 </span>
               ))}
               <FullScreenSlider

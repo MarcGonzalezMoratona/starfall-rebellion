@@ -7,7 +7,10 @@ type SongProps = {
 
 export default function Song({ title, filename }: SongProps) {
   return (
-    <div className="relative h-72 w-72 bg-black flex flex-col gap-4 rounded-2xl items-center justify-between">
+    <div
+      className="relative h-72 w-72 flex flex-col gap-4 rounded-2xl items-center justify-between border-2 border-zinc-700
+    hover:border-amber transition-all duration-300"
+    >
       <Image
         className="absolute rounded-2xl"
         src="/starfallRebellionOST.png"

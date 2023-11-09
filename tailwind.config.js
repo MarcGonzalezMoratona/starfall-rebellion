@@ -11,6 +11,7 @@ module.exports = {
         darkPurple: '#160027',
         royalPurple: '#7D4FA1',
         electricIndigo: '#6610F2',
+        neonBlue: '#11F9F8',
         amber: '#FFC107',
         fuchsia: '#FC19FC',
       },
