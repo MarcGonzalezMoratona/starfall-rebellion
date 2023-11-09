@@ -53,7 +53,7 @@ export default function Home() {
           className="hidden sm:block"
           size="xl"
         />
-        <Link href="#latest-news">
+        <Link href="#about">
           <Image
             src="/arrow.png"
             width={120}
@@ -68,8 +68,8 @@ export default function Home() {
       bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAAbBAMAAAADj99nAAAAG1BMVEUP9fUP+fkR+fkO+/lHcEwM/PwP+PcR+vkR+filiOImAAAACHRSTlMKGyVAABIuunN9bjEAAAIASURBVGje7VmxjtswDH0DCXSlAH+ADdQ/UOBmDuxOF2DROYfmGzp2KdrPvkGWz9fcGQcnaVggb3BigRKfnijbImF37AXuEty1y6od7Rxcbzy5S/mnTe0UGyDshOIcLArgNv635r/STi/l5pLQutz7l+56IHrWrtJzwFcGzLUNzgB43ZfrxZdWbz25/meA6wBYLE7xYkw4/2WlZmaqr9j+E/8b86/ioYYdcySDO0BmBqSjFjFTMzMlRMgVMJ3TORxqBuWYbuJ/mxpojjtw9VJk9VNEpBcp0rcuRaQ0m1WbSLVc38orpiKlrFrL2rCc+pcAQGCW2/g/nb+I9PWuq+tqZooQKUMuiHRMBGBKR20QCaBqB/7wJyF+O4DP/CMjt18t7oBvObVzVURK7X56i7sIGcZjLgy9OAAOKUMyaodh2bOqPCXVjgghZcynXRfUnndZtdOUcTcO0s17VhFfj5/y4eCAIsbHfNSO37k97/DlmI7gw8PBoQCP+db18fixvWeJ833f9SIdAFWfRIZ03Hx5z8KvdXo5A507EYEjHzUJb2cyVXhM+aQDzAhXOmufwUzCnWjJo8Az5lFmaum48XMeZcmRZUww2hu5t5uBmefU4pw3TigezUn3vCntVq9IR5BaoUazcaO6Y1/UyfS9tSV6Z21K24XeHkL/Y//3+ux+PAGpfrq6uTAleAAAAABJRU5ErkJggg==)]"
       />
       <section
-        className="w-full flex flex-col justify-center items-center py-8"
-        id="latest-news"
+        className="w-full flex flex-col justify-center items-center py-8 scroll-mt-12"
+        id="about"
       >
         <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
           ABOUT THE GAME
@@ -93,10 +93,7 @@ export default function Home() {
         className="flex w-5/6 h-8 bg-no-repeat bg-center bg-[length:315px_14px] sm:bg-[length:1062px_27px]
       bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAAbBAMAAAADj99nAAAAG1BMVEUP9fUP+fkR+fkO+/lHcEwM/PwP+PcR+vkR+filiOImAAAACHRSTlMKGyVAABIuunN9bjEAAAIASURBVGje7VmxjtswDH0DCXSlAH+ADdQ/UOBmDuxOF2DROYfmGzp2KdrPvkGWz9fcGQcnaVggb3BigRKfnijbImF37AXuEty1y6od7Rxcbzy5S/mnTe0UGyDshOIcLArgNv635r/STi/l5pLQutz7l+56IHrWrtJzwFcGzLUNzgB43ZfrxZdWbz25/meA6wBYLE7xYkw4/2WlZmaqr9j+E/8b86/ioYYdcySDO0BmBqSjFjFTMzMlRMgVMJ3TORxqBuWYbuJ/mxpojjtw9VJk9VNEpBcp0rcuRaQ0m1WbSLVc38orpiKlrFrL2rCc+pcAQGCW2/g/nb+I9PWuq+tqZooQKUMuiHRMBGBKR20QCaBqB/7wJyF+O4DP/CMjt18t7oBvObVzVURK7X56i7sIGcZjLgy9OAAOKUMyaodh2bOqPCXVjgghZcynXRfUnndZtdOUcTcO0s17VhFfj5/y4eCAIsbHfNSO37k97/DlmI7gw8PBoQCP+db18fixvWeJ833f9SIdAFWfRIZ03Hx5z8KvdXo5A507EYEjHzUJb2cyVXhM+aQDzAhXOmufwUzCnWjJo8Az5lFmaum48XMeZcmRZUww2hu5t5uBmefU4pw3TigezUn3vCntVq9IR5BaoUazcaO6Y1/UyfS9tSV6Z21K24XeHkL/Y//3+ux+PAGpfrq6uTAleAAAAABJRU5ErkJggg==)]"
       />
-      <section
-        className="w-full flex flex-col justify-center items-center py-8"
-        id="latest-news"
-      >
+      <section className="w-full flex flex-col justify-center items-center py-8">
         <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
           LATEST NEWS
         </h2>
