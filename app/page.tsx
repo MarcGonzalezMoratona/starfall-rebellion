@@ -20,6 +20,8 @@ import Song from './components/song';
 import FullScreenSlider from './components/fullscreen-slider';
 import { bixImages } from '../app/data/bix-images';
 import { alluraImages } from '../app/data/allura-images';
+import { topManImages } from '../app/data/topman-images';
+import { venomiteImages } from '../app/data/venomite-images';
 
 export default function Home() {
   const PageHandler = usePageHandler();
@@ -199,6 +201,77 @@ export default function Home() {
                 sizes="h-[180px] w-[180px] sm:h-[270px] sm:w-[270px] md:h-[360px] md:w-[360px] lg:h-[540px] lg:w-[540px] xl:h-[720px] xl:w-[720px]"
                 images={alluraImages}
                 isSliderOpen={currentSlider === 1}
+                closeSlider={closeSlider}
+                currentImageIndex={currentImageIndex}
+                setCurrentImageIndex={setCurrentImageIndex}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        className="flex w-full h-8 bg-no-repeat bg-center bg-[length:315px_14px] sm:bg-[length:1062px_27px]
+      bg-[url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnYAAAAbBAMAAAADj99nAAAAG1BMVEUP9fUP+fkR+fkO+/lHcEwM/PwP+PcR+vkR+filiOImAAAACHRSTlMKGyVAABIuunN9bjEAAAIASURBVGje7VmxjtswDH0DCXSlAH+ADdQ/UOBmDuxOF2DROYfmGzp2KdrPvkGWz9fcGQcnaVggb3BigRKfnijbImF37AXuEty1y6od7Rxcbzy5S/mnTe0UGyDshOIcLArgNv635r/STi/l5pLQutz7l+56IHrWrtJzwFcGzLUNzgB43ZfrxZdWbz25/meA6wBYLE7xYkw4/2WlZmaqr9j+E/8b86/ioYYdcySDO0BmBqSjFjFTMzMlRMgVMJ3TORxqBuWYbuJ/mxpojjtw9VJk9VNEpBcp0rcuRaQ0m1WbSLVc38orpiKlrFrL2rCc+pcAQGCW2/g/nb+I9PWuq+tqZooQKUMuiHRMBGBKR20QCaBqB/7wJyF+O4DP/CMjt18t7oBvObVzVURK7X56i7sIGcZjLgy9OAAOKUMyaodh2bOqPCXVjgghZcynXRfUnndZtdOUcTcO0s17VhFfj5/y4eCAIsbHfNSO37k97/DlmI7gw8PBoQCP+db18fixvWeJ833f9SIdAFWfRIZ03Hx5z8KvdXo5A507EYEjHzUJb2cyVXhM+aQDzAhXOmufwUzCnWjJo8Az5lFmaum48XMeZcmRZUww2hu5t5uBmefU4pw3TigezUn3vCntVq9IR5BaoUazcaO6Y1/UyfS9tSV6Z21K24XeHkL/Y//3+ux+PAGpfrq6uTAleAAAAABJRU5ErkJggg==)]"
+      />
+      <section className="flex flex-col justify-center items-center w-full py-8">
+        <h2 className="text-neutral-100 text-3xl sm:text-4xl font-semibold my-8">
+          ENEMIES
+        </h2>
+        <div className="grid xl:grid-cols-2 w-full">
+          <div className="flex flex-col items-center gap-4">
+            <h3 className="text-neutral-100 text-3xl sm:text-4xl font-semibold">
+              Top Man
+            </h3>
+            <p className="text-neutral-100 text-xl">Combat type: Melee</p>
+            <div className="flex flex-col md:flex-row my-4 items-center justify-center gap-4">
+              {topManImages.map((image, index) => (
+                <span key={image.url.split('.')[0]}>
+                  <div className="my-4">
+                    <Image
+                      onClick={() => openSlider(index, 2)}
+                      className="cursor-pointer select-none"
+                      src={image.url}
+                      width={300}
+                      height={300}
+                      alt={image.description}
+                    />
+                  </div>
+                </span>
+              ))}
+              <FullScreenSlider
+                sizes="h-[180px] w-[180px] sm:h-[270px] sm:w-[270px] md:h-[360px] md:w-[360px] lg:h-[540px] lg:w-[540px] xl:h-[720px] xl:w-[720px]"
+                images={topManImages}
+                isSliderOpen={currentSlider === 2}
+                closeSlider={closeSlider}
+                currentImageIndex={currentImageIndex}
+                setCurrentImageIndex={setCurrentImageIndex}
+              />
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <h3 className="text-neutral-100 text-3xl sm:text-4xl font-semibold">
+              Venomites
+            </h3>
+            <p className="text-neutral-100 text-xl">Combat type: Ranged</p>
+            <div className="flex flex-col md:flex-row my-4 items-center justify-center gap-4">
+              {venomiteImages.map((image, index) => (
+                <span key={image.url.split('.')[0]}>
+                  <div className="my-4">
+                    <Image
+                      onClick={() => openSlider(index, 3)}
+                      className="cursor-pointer select-none"
+                      src={image.url}
+                      width={300}
+                      height={300}
+                      alt={image.description}
+                    />
+                  </div>
+                </span>
+              ))}
+              <FullScreenSlider
+                sizes="h-[180px] w-[180px] sm:h-[270px] sm:w-[270px] md:h-[360px] md:w-[360px] lg:h-[540px] lg:w-[540px] xl:h-[720px] xl:w-[720px]"
+                images={venomiteImages}
+                isSliderOpen={currentSlider === 3}
                 closeSlider={closeSlider}
                 currentImageIndex={currentImageIndex}
                 setCurrentImageIndex={setCurrentImageIndex}
