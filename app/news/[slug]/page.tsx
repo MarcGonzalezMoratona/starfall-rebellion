@@ -9,6 +9,7 @@ import fs from 'fs';
 import { Metadata } from 'next';
 import matter from 'gray-matter';
 import { notFound } from 'next/navigation';
+import CTA from '@/app/components/cta';
 
 export function generateMetadata({
   params,
@@ -43,10 +44,13 @@ export default async function News({ params }: { params: { slug: string } }) {
   return (
     <main className="min-h-screen bg-zinc-900 w-full flex flex-col gap-8 items-center justify-center">
       {/* <FullPost data={posts} /> */}
-      <div
-        className="markdown w-5/6 md:w-2/3"
-        dangerouslySetInnerHTML={{ __html: postContent }}
-      />
+      <section className="w-5/6 md:w-2/3">
+        <CTA label="BACK TO NEWS" href="/news" className="w-48 my-8" />
+        <article
+          className="markdown"
+          dangerouslySetInnerHTML={{ __html: postContent }}
+        />
+      </section>
     </main>
   );
 }
