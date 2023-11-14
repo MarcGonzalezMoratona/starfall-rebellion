@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <main className="bg-zinc-900 w-full flex flex-col items-center justify-center scroll-smooth">
       <section className="flex flex-col justify-center gap-6 items-center h-screen">
-        <StarfallRebellion width={800} height={800} loading="eager" />
+        <StarfallRebellion width={800} height={800} />
         <p className="text-white sm:text-2xl">
           ACTION-ADVENTURE · FREE TO PLAY
         </p>

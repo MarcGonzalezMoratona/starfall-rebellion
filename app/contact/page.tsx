@@ -22,7 +22,6 @@ export default function Contact() {
           width={750}
           height={500}
           className="select-none"
-          loading="eager"
         />
         <div className="flex flex-col gap-4">
           <Link
