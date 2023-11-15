@@ -11,7 +11,7 @@ export const songs = [
   },
   {
     id: 3,
-    title: 'Hangar - Level 1 (COMING SOON)',
+    title: 'Hangar - Level 1',
     file: 'hangar.wav',
   },
   {
