@@ -9,12 +9,20 @@ import { conceptArt } from '../data/concept-art';
 import { gameImages } from '../data/game';
 import StarfallRebellion from '../components/logos/starfall-rebellion';
 import { collaborators } from '../data/collaborators';
+import { useDevice } from '../hooks/useDevice';
 
 export default function Press() {
   const [selected, setSelected] = useState('');
   const PageHandler = usePageHandler();
   const [currentSlider, setCurrentSlider] = useState(-1);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const device = useDevice();
+  const isMobile = device === 'mobile';
+  const isTablet = device === 'tablet';
+
+  const date = new Date(Date.now());
+  const releaseDate = new Date('2023-11-17T18:15:00');
 
   const openSlider = (index: any, slider: number) => {
     setCurrentImageIndex(index);
@@ -358,16 +366,17 @@ export default function Press() {
                 >
                   VIDEOS:
                 </h2>
-                {/* <iframe
-                  className="absolute top-0 left-0 h-full w-full"
-                  src={'https://www.youtube.com/embed/8dXB4pETtzI'}
-                  allowFullScreen
-                />
-                <iframe
-                  className="absolute top-0 left-0 h-full w-full"
-                  src={'https://www.youtube.com/embed/pNHbeZiWuIc'}
-                  allowFullScreen
-                /> */}
+                <h3 className="text-lg font-medium sm:text-xl scroll-mt-12 mt-4">
+                  OFFICIAL TRAILER
+                </h3>
+                {date > releaseDate && (
+                  <iframe
+                    width={isMobile || isTablet ? 280 : 560}
+                    height={isMobile || isTablet ? 157 : 315}
+                    src={'https://www.youtube.com/embed/kg19eiAcFYg'}
+                    allowFullScreen
+                  />
+                )}
               </div>
             </article>
           </section>
