@@ -15,6 +15,10 @@ export default function Media() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const device = useDevice();
   const isMobile = device === 'mobile';
+  const isTablet = device === 'tablet';
+
+  const date = new Date(Date.now());
+  const releaseDate = new Date('2023-11-17T18:15:00');
 
   useEffect(() => {
     PageHandler('media');
@@ -73,6 +77,14 @@ export default function Media() {
       </section>
       <section className="flex w-2/3 flex-col items-center justify-center gap-4">
         <h2 className="text-3xl text-white font-semibold">VIDEOS</h2>
+        {date > releaseDate && (
+          <iframe
+            width={isMobile || isTablet ? 280 : 560}
+            height={isMobile || isTablet ? 157 : 315}
+            src={'https://www.youtube.com/embed/kg19eiAcFYg'}
+            allowFullScreen
+          />
+        )}
         {/* <div className="flex flex-col gap-4 sm:flex-row">
           {videoSourceMap.map((video) => {
             return (
