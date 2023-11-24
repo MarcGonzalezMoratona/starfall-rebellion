@@ -53,7 +53,7 @@ export default function Header() {
         <CTA
           className="hidden sm:block"
           label="DOWNLOAD"
-          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.7.0/Starfall.Rebellion.0.7.0.zip"
+          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.8.0/Starfall.Rebellion.0.8.0.zip"
           size="md"
         />
       </header>
