@@ -55,6 +55,7 @@ export default function Header() {
           label="DOWNLOAD"
           href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v1.0/Starfall.Rebellion.1.0.zip"
           size="md"
+          external
         />
       </header>
       <Menu />

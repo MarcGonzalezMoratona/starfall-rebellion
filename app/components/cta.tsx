@@ -5,9 +5,16 @@ type CTAProps = {
   label: string;
   className?: string;
   size?: 'sm' | 'md' | 'lg' | 'xl';
+  external?: boolean;
 };
 
-export default function CTA({ href, label, className, size = 'lg' }: CTAProps) {
+export default function CTA({
+  href,
+  label,
+  className,
+  size = 'lg',
+  external = false,
+}: CTAProps) {
   return (
     <div
       className={`items-center text-white border-2
@@ -17,7 +24,12 @@ export default function CTA({ href, label, className, size = 'lg' }: CTAProps) {
         size === 'lg' && 'text-lg'
       } ${size === 'xl' && 'text-xl'}`}
     >
-      <Link href={href} className="skew-x-6">
+      <Link
+        href={href}
+        className="skew-x-6"
+        target={external ? '_blank' : ''}
+        rel={external ? 'noopener' : ''}
+      >
         {label}
       </Link>
     </div>
