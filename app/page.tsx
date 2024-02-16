@@ -51,7 +51,7 @@ export default function Home() {
         </p>
         <CTA
           label="DOWNLOAD"
-          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v0.7.0/Starfall.Rebellion.0.7.0.zip"
+          href="https://github.com/Horizons-Games/Axolotl-Engine/releases/download/v1.0/Starfall.Rebellion.1.0.zip"
           className="hidden sm:block"
           size="xl"
         />
